@@ -1,0 +1,33 @@
+#ddtransform {
+    background-color: rgb(165, 42, 42);
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    color: white;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    filter: drop-shadow(5px 5px 10px black);
+}
+
+/*transform can be applied only and only if the element is either block element or inline-block element*/
+#ddtransform:hover {
+    background-color: rgb(165, 42, 42);
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    color: white;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    filter: drop-shadow(-5px -5px 10px black);
+    transform: translate(10px, 10px);
+    /*skew(),skewY() can also be put*/
+    /* transform: scale(2, 2); */
+    /*scaleX(),scaleY() can also put*/
+    /* transform: rotate(20deg); */
+    /* transform-origin: 0% 0%; */
+    /*by default the skew and rotate property works from the center of the element but we can change it by transform-origin:;*/
+    /*we can use this shortcut:
+    transform:(scaleX,skewY,skewX,scaleY*,translateX,translateY)*/
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            border: 5px solid black;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            resize: vertical;
+            overflow: hidden;
+            /* align-content: space-evenly; */
+        }
+
+        .child {
+            font-size: 50px;
+            height: 100px;
+            /* max-width:200px;
+             */
+            flex-basis: 200px;
+            /*flex-basis depends on cross-axis,if row then width is set,otherwise height is set. */
+        }
+
+        #b1 {
+            background-color: crimson;
+            /* order: -2; */
+            /* flex-grow: 1; */
+        }
+
+        #b2 {
+            background-color: chartreuse;
+            /* order: -1; */
+        }
+
+        #b3 {
+            background-color: cornflowerblue;
+            /* flex-grow: 5; */
+        }
+
+        #b4 {
+            background-color: coral;
+            /* flex-grow: 1; */
+        }
+
+        #b5 {
+            background-color: crimson;
+            /* order: -2; */
+            /* flex-grow: 1; */
+
+        }
+
+        #b6 {
+            background-color: chartreuse;
+            /* order: -1; */
+            /* flex-grow: 1; */
+        }
+
+        #b7 {
+            background-color: cornflowerblue;
+            /* order: -1; */
+            /* flex-grow: 1; */
+        }
+
+        #b8 {
+            background-color: coral;
+            /* flex-grow: 1; */
+        }
+
+        #b9 {
+            background-color: crimson;
+            /* order: -2; */
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="b1" class="child">b1</div>
+        <div id="b2" class="child">b2</div>
+        <div id="b3" class="child">b3</div>
+        <div id="b4" class="child">b4</div>
+        <div id="b5" class="child">b5</div>
+        <div id="b6" class="child">b6</div>
+        <div id="b7" class="child">b7</div>
+        <div id="b8" class="child">b8</div>
+        <div id="b9" class="child">b9</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<body>
+    <form action="" id="f1">
+        <label for="mn">Enter Name : </label>
+        <input type="text" name="myname" id="mn">
+        <input type="submit" value="submit">
+    </form>
+    <script>
+        $(document).ready(function () {
+            $("#mn").focus(function () {
+                $(this).css("background-color", "cornflowerblue");
+            });
+            $("#mn").blur(function () {
+                $(this).css("background-color", "crimson");
+            });
+            $("#mn").change(function () {
+                let text = $(this).val();
+                console.log(text);
+            });
+            $("#mn").select(function () {
+                $(this).css("background-color", "coral");
+            });
+            $("#f1").submit(
+                function () {
+                    alert("form submitted");
+                }
+            );
+
+        });
+    </script>
+</body>
+
+</html>

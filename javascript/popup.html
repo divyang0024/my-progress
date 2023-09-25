@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <H1>This is examples of javascript popups</H1><br>
+    <script>
+        alert("please verify your age!!!!.");
+        let response = prompt("please enter your age int he below field : ", 18);
+        confirm("are you sure!!!!.")
+        if (response === null) {
+            alert("please dont leave the field blank enter a valid input");
+        }
+        else if (response >= 18) {
+            alert(`your age is : ${response}`);
+        }
+        else {
+            alert("your age is below 18 you cant access this site!!!!.")
+        }
+    </script>
+</body>
+
+</html>

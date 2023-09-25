@@ -1,0 +1,1 @@
+export { employee1, employee2 } from './module5.js';

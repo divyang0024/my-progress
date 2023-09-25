@@ -1,0 +1,13 @@
+#div1 {
+    column-count: 4;
+    /*divides the paragraph into sevral column*/
+    column-gap: 20px;
+    /*defines the spacing between each column*/
+    column-width: 500px;
+    /*if a column reach minimum width then it will automatically fit iteslf inside of another column*/
+    column-rule: 5px dashed blue;
+}
+
+h1 {
+    column-span: all;
+}

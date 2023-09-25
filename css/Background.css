@@ -1,0 +1,8 @@
+#Background {
+    background-color: rgb(189, 246, 105);
+    background-image: url('Images/pngwing.com.png'), url('Images/pngwing.com2.png'), url('Images/pngwing.com3.png');
+    background-repeat: no-repeat, repeat-y, repeat-y;
+    background-position: center, left top, right bottom;
+    background-size: 1500px 1500px, 700px 700px, 700px 700px;
+    background-attachment: scroll, scroll, scroll;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #div1 {
+            width: 50vw;
+            height: 30vh;
+            position: fixed;
+            border: 2px solid black;
+            border-radius: 20px;
+            left: 25%;
+            top: 25%;
+            background-image: linear-gradient(to right, whitesmoke, rgb(56, 150, 150));
+            box-shadow: 10px 10px 20px black;
+            transition: 1s ease-in-out;
+            box-sizing: border-box;
+        }
+
+        #div2 {
+            height: inherit;
+            width: 45%;
+            border: 2px solid black;
+            border-radius: 20px;
+            position: absolute;
+            background-image: url('./Images/lighthouse.jpg');
+            ;
+            left: 25%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 10px 10px 20px black;
+            transition: 1s ease-in-out;
+        }
+
+
+
+        #div1:hover {
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)), url(./Images/lighthouse.jpg);
+            filter: saturate(100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            float: right;
+            /* transform: scaleX(0.2); */
+        }
+
+        #div2:hover {
+            height: 20em;
+            width: 3em;
+            transform-origin: center;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0)), url('./Images/lighthouse.jpg');
+            border-radius: 100px;
+            filter: blur(0px);
+            left: 0px;
+            transform: scale(1.2);
+            filter: blur(2px);
+            opacity: 0.6;
+            /* float: left; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <div id="div2" class="h">
+        </div>
+    </div>
+</body>
+
+</html>

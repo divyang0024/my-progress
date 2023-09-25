@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this a program to demonstrate DOM element cloning.</h1>
+    <ul id="ul1">
+        <li>li11</li>
+        <li>li12</li>
+        <li>li13</li>
+        <li>li14</li>
+        <li>li15</li>
+    </ul>
+    <ul id="ul2">
+        <li>li21</li>
+        <li>li22</li>
+        <li>li23</li>
+        <li>li24</li>
+        <li>li25</li>
+    </ul>
+    <script>
+        let ul1copy = document.getElementById("ul1").cloneNode(true);
+        ul1copy.id = "ul3";
+        let ul3 = document.body.firstElementChild.nextElementSibling;
+        let body = document.body;
+        body.insertBefore(ul1copy, ul3);
+        let ul2copy = document.getElementById("ul2").cloneNode();
+        ul2copy.id = "ul4";
+        for (let i = 0; i < 5; i++) {
+            let gen_li = document.createElement("li");
+            ul2copy.appendChild(gen_li);
+        }
+        let LI_collection = ul2copy.children;
+        for (let j = 0; j < 5; j++) {
+            LI_collection[j].innerHTML = prompt(`insert value at li${j + 1} : `);
+        }
+        console.log(ul2copy);
+        ul2copy.id = "li4";
+        let ul2 = document.getElementById("ul2");
+        body.insertBefore(ul2copy, ul2);
+    </script>
+</body>
+
+</html>

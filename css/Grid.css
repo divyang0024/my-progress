@@ -1,0 +1,40 @@
+#parent {
+    margin: -10px;
+    padding: 50px;
+    width:100%;
+    background-color: burlywood;
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+    grid-gap: 50px;
+}
+
+.child {
+    border: 2px solid black;
+    font-size: 40px;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 100px;
+}
+
+#header {
+    grid-area: header;
+}
+
+#menu {
+    grid-area: menu;
+}
+
+#main {
+    grid-area: main;
+}
+
+#right {
+    grid-area: right;
+}
+
+#footer {
+    grid-area: footer;
+}

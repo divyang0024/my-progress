@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ol id="parent">
+        <li id="child1">1</li>
+        <li id="child2">2</li>
+        <li id="child3">3</li>
+        <li id="child4">4</li>
+        <li id="child5">5</li>
+    </ol>
+    <script>
+        let section = document.createElement("div");
+        section.textContent = "div added!!!!";
+        let p = document.getElementById("parent");
+        let ref = p.firstElementChild.nextElementSibling.nextElementSibling;
+        let ref1 = p.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling;
+        p.insertBefore(section, ref);
+        p.replaceChild(section, ref1);
+        p.removeChild(document.getElementById("child5"));
+    </script>
+</body>
+
+</html>

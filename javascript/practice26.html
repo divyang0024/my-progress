@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #p1 {
+            height: 500px;
+            width: 500px;
+            background-color: red;
+        }
+
+        #p2 {
+            height: 50%;
+            width: 50%;
+            background-color: green;
+        }
+
+        #p3 {
+            height: 50%;
+            width: 50%;
+            background-color: blue;
+        }
+
+
+        div {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="p1">
+        <div id="p2">
+            <div id="p3"></div>
+        </div>
+    </div>
+    <script>
+        let btn1 = document.getElementById("p1");
+        let btn2 = document.getElementById("p2");
+        let btn3 = document.getElementById("p3");
+        let BODY = document.body;
+        BODY.addEventListener("click", function () {
+            console.log("body triggred!!!!.")
+        });
+        btn1.addEventListener("click", function () {
+            console.log("button 1 is clicked!!!!.");
+        });
+        btn2.addEventListener("click", function () {
+            console.log("button 2 is clicked!!!!.");
+        });
+        btn3.addEventListener("click", function (s) {
+            console.log("button 3 is clicked!!!!.");
+            s.stopPropagation();
+        });
+    </script>
+</body>
+
+</html>

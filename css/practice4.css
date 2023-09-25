@@ -1,0 +1,31 @@
+#parent1 {
+    background-color: red;
+    padding:100px;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+#parent2 {
+    background-color: blue;
+    padding:100px;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.child1 {
+    height: 50px;
+    width: 100px;
+    padding:20px;
+    margin:50px;
+    background-color: aqua;
+}
+
+.child2 {
+    height: 50px;
+    width: 100px;
+    padding:20px;
+    margin:50px;
+    background-color: chartreuse;
+}

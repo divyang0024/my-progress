@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <h1>this is a program to demonstrate obj method.</h1>
+    <script>
+        // function fun1() {
+        //     alert("functio was invoked!!!!");
+        // }
+        // let x = fun1;
+        // x();
+        let obj = {
+            a: null,
+            b: null,
+            c: function fun1() { alert("function invoked!!!!") },
+            e: function () { alert("fun3 invoked!!!!") },
+            fun4() {
+                alert("fun4 invoked!!!!");
+            },
+            fun5(a, b) {
+                this.a = a;
+                this.b = b;
+                alert(a + b);
+            }
+
+        };
+        obj.c();
+        obj.d = fun2;
+        obj.d();
+        function fun2() {
+            alert("fun2 invoked!!!!");
+        }
+        obj.e();
+        obj.fun4();
+        obj.fun5(12, 23);
+    </script>
+</body>
+
+</html>

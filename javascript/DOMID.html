@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate DOM get element by id</h1>
+    <ol>
+        <li id="1">first.</li>
+        <li id="2">second.</li>
+        <li id="3">third.</li>
+    </ol>
+    <script>
+        document.getElementById("1").innerHTML = "<h3>changed heading<h3><ul><li>changed</ul></li>";
+        document.write(document.getElementById("2").innerHTML);
+    </script>
+</body>
+
+</html>

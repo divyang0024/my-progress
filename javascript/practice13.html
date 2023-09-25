@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        let x = 0;
+        let person = {
+            FIRST_NAME: "divyang",
+            LAST_NAME: "mundotia",
+            GENDER: "male",
+            AGE: 20,
+            CITY: "new delhi",
+            PASSWORD: null,
+            get GETTER() {
+                document.writeln(this.FIRST_NAME);
+                document.writeln(this.LAST_NAME);
+                document.writeln(this.GENDER);
+                document.writeln(this.AGE);
+                document.writeln(this.CITY);
+                document.write(this.PASSWORD);
+            },
+            set SETTER(n) {
+                this.PASSWORD = n;
+            },
+            MY_DATA: function () {
+                for (let i in this) {
+                    if (x <= 5)
+                        document.write(`<br>${i} IS ${this[i]}<br>`);
+                    ++x;
+                }
+            }
+        };
+        person.SETTER = "########";
+        person.GETTER;
+        person.MY_DATA();
+        console.log(person);
+    </script>
+</body>
+
+</html>

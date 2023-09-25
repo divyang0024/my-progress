@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            background-color: cornsilk;
+            border: 5px solid black;
+            width: 100vw;
+            height: 25vh;
+            padding: 10px;
+            display: flex;
+            /* we have to use display property and assign its value to flex */
+            flex-direction: column;
+            /* it is used to give direction to flexbox there are four values in flexbox that is row which is by default,row-reverse:rtl,column,column reverse:btt;. */
+            flex-wrap: wrap-reverse;
+            /* when wraping is done in row:
+            wrap:wraping is done in top to bottom order.
+            wrap-reverse:wraping is done bottom to top order.*/
+            /* when wraping is done in column:
+            wrap:wraping is done in left to right order.
+            wrap-reverse:wraping is done right to left order.*/
+            /* flex-flow: flex-direction flex-wrap; */
+        }
+
+        #child1 {
+            background-color: crimson;
+        }
+
+        #child2 {
+            background-color: cornflowerblue;
+        }
+
+        #child3 {
+            background-color: chartreuse;
+        }
+
+        #child4 {
+            background-color: coral;
+        }
+
+        #child5 {
+            background-color: crimson;
+        }
+
+        #child6 {
+            background-color: cornflowerblue;
+
+        }
+
+        #child7 {
+            background-color: chartreuse;
+        }
+
+        #child8 {
+            background-color: coral;
+        }
+
+        .box {
+            font-size: 50px;
+            font-weight: bold;
+            color: cornsilk;
+            -webkit-text-stroke: 0.5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child1" class="box">box1</div>
+        <div id="child2" class="box">box2</div>
+        <div id="child3" class="box">box3</div>
+        <div id="child4" class="box">box4</div>
+        <div id="child5" class="box">box5</div>
+        <div id="child6" class="box">box6</div>
+        <div id="child7" class="box">box7</div>
+        <div id="child8" class="box">box8</div>
+    </div>
+</body>
+
+</html>

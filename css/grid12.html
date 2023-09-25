@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            height: 100vh;
+            background-color: grey;
+            border: 2px solid black;
+            display: grid;
+            padding: 10px;
+            row-gap: 10px;
+            column-gap: 10px;
+            grid-template-columns: fit-content(50px) min-content;
+            grid-template-rows: max-content min-content;
+        }
+
+        .children {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- fit-content works like min-content but size is specified. -->
+    <!-- min-content takes the biggest word and set the size. -->
+    <!-- fit-content takes the argument and adjust the size on the basis of content. -->
+    <div id="parent">
+        <div class="children">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium debitis eaque
+            excepturi necessitatibus suscipit vero, illo officiis? Sit ipsum, velit assumenda non harum maiores
+            perferendis quaerat error mollitia, sapiente magnam.</div>
+        <div class="children">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sapiente quas
+            corporis tenetur vero, reiciendis veniam ullam nostrum numquam ratione alias in quo fuga. Ab facere
+            reiciendis maiores inventore eveniet!</div>
+        <div class="children">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, cumque!</div>
+        <div class="children">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit assumenda itaque aut, nihil
+            iure similique maiores possimus in soluta porro numquam hic facere aliquam, eaque laborum ab omnis nesciunt
+            est.</div>
+    </div>
+</body>
+
+</html>

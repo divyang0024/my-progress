@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is program to demonstrate DOM replace element.</h1>
+    <ul id="ul1">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+    <ul id="ul2">
+        <li>a</li>
+        <li>b</li>
+        <li id="li23">c</li>
+        <li>d</li>
+        <li>e</li>
+    </ul>
+    <script>
+        let ul1 = document.getElementById("ul1");
+        let newel = document.createElement("li");
+        newel.textContent = "changed!!!!";
+        let li3 = ul1.lastElementChild.previousElementSibling.previousElementSibling;
+        ul1.replaceChild(newel, li3);
+        document.getElementById("li23").innerHTML = "changed!!!!";
+    </script>
+</body>
+
+</html>

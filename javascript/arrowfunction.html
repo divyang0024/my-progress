@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        let fun = function () {
+            console.log("normal function invoked!!!!.");
+        }
+        let fun1 = () => {
+            console.log("arrow function is invoked!!!!.");
+        }
+        let add = (a, b) => a + b;//return cant be put in this condition.
+        console.log(add(12, 23));
+        fun();
+        fun1();
+    </script>
+</body>
+
+</html>

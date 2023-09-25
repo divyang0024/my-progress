@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: logo-font;
+            src: url(/Fonts/abduction2002.ttf);
+        }
+
+        :root {
+            --yellow: #F9D949;
+            --navy: #3C486B;
+            --grey: #F0F0F0;
+            --red: #F45050;
+        }
+
+        * {
+            box-sizing: border-box;
+            /* font-family: 'Kanit', sans-serif; */
+            margin: 0px;
+            padding: 0px;
+            /* color: var(--grey); */
+        }
+
+        html {
+            font-size: 2vw;
+            border-radius: 2vw;
+        }
+
+        #main-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        #main-child {
+            font-size: 1.5em;
+            height: 100vh;
+        }
+
+        #page-logo {
+            color: var(--red);
+            font-family: logo-font;
+        }
+
+        .logo {
+            width: 35%;
+            background-color: var(--navy);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            width: 65%;
+            height:50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:var(--red);
+        }
+        #form-container{
+            background-color: var(--yellow);
+            padding:50px;
+            border-radius: .5em;
+            box-shadow: 10px 10px 20px 0 var(--red);
+            color: var(--red);
+            font-family: logo-font; 
+        }
+        input,select{
+            border:.1em solid var(--red);
+            border-radius: .5em; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="main-child" class="logo">
+            <p id="page-logo">My Login Page</p>
+        </div>
+        <div id="main-child" class="form">
+            <form action="/submit" method="POST" id="form-container">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <input type="submit" value="GO">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

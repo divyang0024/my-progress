@@ -1,0 +1,19 @@
+#box1 {
+    width: 70%;
+    height: 20vh;
+    background-color:red;
+    float:left;
+  
+}
+
+#box2 {
+    width: 30%;
+    height:10vh;
+    background-color:blue;
+    float:left;
+}
+
+#box3 {
+    height:20vh;
+    background-color: green;
+}

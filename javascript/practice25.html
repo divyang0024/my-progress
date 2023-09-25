@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur distinctio est mollitia ullam necessitatibus
+        delectus officiis eveniet illo quae tempora, explicabo odio at ipsa eligendi optio illum sit. Fuga corrupti
+        accusamus provident et ex velit nostrum. Nostrum inventore maxime reiciendis nisi ipsam, deleniti officiis
+        exercitationem unde, ex fuga asperiores dolorem sequi? Ipsam, nesciunt officia exercitationem id voluptas
+        suscipit laboriosam tenetur explicabo? Ea dolore magni cupiditate tempore officia dolor iusto repellat harum
+        quas? Ut laudantium sapiente enim nam temporibus, minima quidem cupiditate magni. Est fugiat dolore
+        necessitatibus tenetur voluptatem ipsa adipisci reiciendis illum ex consequatur? Aliquam deserunt laborum totam
+        architecto officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos soluta, provident blanditiis
+        eum earum consequuntur unde repellendus harum. Animi, eum quas? Totam ex error, a placeat eos ut eius ducimus
+        omnis natus sint perferendis! Commodi aliquam, totam, distinctio dignissimos dicta inventore earum deleniti
+        error maiores atque a officia. Quas impedit commodi, magni laudantium sunt consequatur vel expedita aliquid ea
+        ratione temporibus consequuntur perferendis eaque sint ab! Eveniet perferendis ad quibusdam corrupti, placeat
+        odio et ea atque veritatis ratione maxime laudantium aut maiores ipsam neque praesentium aliquid distinctio
+        adipisci cupiditate assumenda sapiente odit in debitis! Aut corporis corrupti nesciunt libero sit?
+    </div>
+    <script>
+        // window.addEventListener("wheel", function (event) {
+        //     if (event.deltaY < 0 && event.deltaX == 0) {
+        //         console.log("scrolling up!!!!.");
+        //     }
+        //     else if (event.deltaY > 0 && event.deltaX == 0) {
+        //         console.log("scrolling down!!!!.");
+        //     }
+        //     else if (event.deltaY == 0 && event.deltaX < 0) {
+        //         console.log("scrolling left!!!!.");
+        //     }
+        //     else if (event.deltaY == 0 && event.deltaX > 0) {
+        //         console.log("scrolling right!!!!.");
+        //     }
+        //     else if (event.deltaY < 0 && event.deltaX < 0) {
+        //         console.log("scrolling up towards left!!!!.");
+        //     }
+        //     else if (event.deltaY < 0 && event.deltaX > 0) {
+        //         console.log("scrolling up towards right!!!!.");
+        //     }
+        //     else if (event.deltaY > 0 && event.deltaX < 0) {
+        //         console.log("scrolling up towards left!!!!.");
+        //     }
+        //     else if (event.deltaY > 0 && event.deltaX > 0) {
+        //         console.log("scrolling up towards right!!!!.");
+        //     }
+        // });
+
+        window.addEventListener("scroll", function () {
+            if (window.pageYOffset > 150) {
+                document.body.style.backgroundColor = "blue";
+            }
+            else if (window.pageYOffset < 50) {
+                document.body.style.backgroundColor = "white";
+            }
+        });
+    </script>
+</body>
+
+</html>

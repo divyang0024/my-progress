@@ -1,0 +1,11 @@
+#para {
+    height: 500px;
+    width: 100vh;
+    background-color: brown;
+    background-image: url('./Images/pngwing.com.png'), url('./Images/pngwing.com1.png');
+    opacity: 0.5;
+    background-repeat: no-repeat, repeat-y;
+    background-attachment: scroll, fixed;
+    background-size: contain,contain;
+    background-position: left,right center;
+}

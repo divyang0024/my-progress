@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ol id="parent1">
+        <li id="child1">li1</li>
+        <li id="child2">li2</li>
+        <li id="child3">li3</li>
+        <li id="child4">li4</li>
+        <li id="child5">li5</li>
+    </ol>
+    <ol id="parent2">
+        <li id="child1">li1</li>
+        <li id="child2">li2</li>
+        <li id="child3">li3</li>
+        <li id="child4">li4</li>
+        <li id="child5">li5</li>
+    </ol>
+    <script>
+        let count;
+        let p2c = document.body.firstElementChild.nextElementSibling.cloneNode(true);
+        p2c.id = "parent3"
+        document.body.appendChild(p2c);
+        let list = p2c.children;
+        let size = list.length;
+        for (let i in list) {
+            count = parseInt(i) + 1;
+            if ((i) === "length") {
+                break;
+            }
+            list[i].innerHTML = prompt(`enter the value inside l${count} : `)
+            console.log(i);
+        }
+    </script>
+</body>
+
+</html>

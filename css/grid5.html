@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 100vh;
+            margin: 0px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            display: grid;
+            grid-template-rows: repeat(4, [row-start]auto[row-end]);
+            grid-template-columns: [column-1]auto [column-2]auto [column-3]auto[column-4];
+        }
+
+        .grid-box {
+            border: 2px solid black;
+            font-size: 200px;
+            text-align: center;
+            color: chartreuse;
+            background-color: cornflowerblue;
+        }
+
+        #div1 {
+            grid-area: row-start 1/column-1/row-end 2/column-4;
+        }
+
+        #div5 {
+            grid-area: row-start 4/column-1/row-end 5/column-4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- instead of writing numbers for grid lines we can name it. -->
+    <div class="grid-box" id="div1">1</div>
+    <div class="grid-box" id="div2">2</div>
+    <div class="grid-box" id="div3">3</div>
+    <div class="grid-box" id="div4">4</div>
+    <div class="grid-box" id="div5">5</div>
+</body>
+
+</html>

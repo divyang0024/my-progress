@@ -1,0 +1,44 @@
+body {
+    background-image: linear-gradient(to right bottom, white, black);
+}
+
+#parent {
+    margin: 500px;
+    height: 250px;
+    width: 250px;
+    box-shadow: 5px 5px 20px black, -2px -3px 5px whitesmoke;
+    position: relative;
+    border-radius: 140px;
+    background-image: linear-gradient(to bottom, burlywood, rgb(171, 119, 52));
+    transition-property: filter,transform;
+    transition-duration: 1s;
+    transition-delay: 10ms;
+    transition-timing-function: ease-in-out ;
+    filter: blur(5px);
+}
+
+#parent:hover {
+    transform: rotate3d(0,1,1,360deg);
+   filter:blur(0);
+}
+
+#child {
+    padding: 50px;
+    box-sizing: border-box;
+    height: 125px;
+    width: 125px;
+    box-shadow: -2px -3px 10px rgb(255, 255, 255), 5px 5px 20px rgb(0, 0, 0);
+    background-image: linear-gradient(to bottom, burlywood, rgb(171, 119, 52));
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    border-radius: 70px;
+    transition-property: all;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#child:hover {
+    background-color: rgb(47, 75, 19);
+    transform: rotate(360deg);
+}

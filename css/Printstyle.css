@@ -1,0 +1,15 @@
+@media screen {
+    p {
+        background-color: red;
+        /*the property applied will be visible when viewport is opened*/
+    }
+}
+
+@media print {
+    p {
+        background-color: yellowgreen;
+        color: blue;
+        font-weight: 20px;
+        /*the property applied will be visible when printout of the website is taken*/
+    }
+}

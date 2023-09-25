@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function person() {
+            this.name;
+            this.age;
+            this.gender;
+        }
+        function address() {
+        }
+        address.prototype.fun1 = function () {
+            console.log("function invoked!!!!.");
+        }
+        person.prototype.fun = function () {
+            console.log("function invoked!!!!.");
+        }//this function will be included inside the person object and not inside p1 object. 
+        let p1 = new person();
+        let p2 = new address();
+        p1.name = "ram";
+        p1.age = 21;
+        p1.gender = "male";
+        person.prototype.__proto__ = Object.create(address.prototype);
+        // person.prototype.__proto__ = address.prototype;
+        // p1.fun1();
+        console.log(p1);
+        console.log(p2);
+        // console.log(person.prototype);
+        // console.log(p1.__proto__.__proto__.__proto__);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            height: 500px;
+            width: 500px;
+            background-color: grey;
+            display: flex;
+            flex-direction: row;
+            border: 1px solid black;
+            align-content: center;
+        }
+
+        .children {
+            border: 1px solid black;
+            font-size: 100px;
+        }
+
+        #div1 {
+            background-color: chartreuse;
+
+        }
+
+        #div2 {
+            background-color: coral;
+
+        }
+
+        #div3 {
+            background-color: crimson;
+        }
+
+        #div4 {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we can't align items in the main-axis but it is possible in the case cross axis. -->
+    <div id="parent">
+        <div class="children" id="div1">1</div>
+        <div class="children" id="div2">2</div>
+        <div class="children" id="div3">3</div>
+        <div class="children" id="div4">4</div>
+    </div>
+</body>
+
+</html>

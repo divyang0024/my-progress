@@ -1,0 +1,16 @@
+#parent {
+    border: 5px solid black;
+    overflow: auto;
+    background-color: aqua;
+}
+
+#img1 {
+    width: 250px;
+    height: 280px;
+    float: right;
+}
+
+#img2 {
+    float: right;
+    clear: right;
+}

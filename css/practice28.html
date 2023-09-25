@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+
+            box-sizing: border-box;
+            border: 10px solid black;
+            border-radius: 10px;
+            ;
+        }
+
+        div {
+            background-image: linear-gradient(to right, red, green);
+            height: 2vh;
+            width: 100%;
+            animation-name: box-animation;
+            animation-duration: 5s;
+            animation-play-state: paused;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            /* animation-delay: 5s; */
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-sizing: border-box;
+            ;
+        }
+
+        div:hover {
+            animation-play-state: running;
+        }
+
+        @keyframes box-animation {
+            from {
+                width: 1%;
+            }
+
+            to {
+                width: 100%;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

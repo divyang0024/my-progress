@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate DOM input events.</h1>
+    <label for="input1">Name : </label>
+    <input type="text" id="input1">
+    <input type="radio" name="" id="r">
+    <script>
+        let textfield = document.getElementById("input1");
+        let r = document.getElementById("r");
+        function FOcus() {
+            textfield.style.background = "grey";
+        }
+        function BLur() {
+            textfield.style.background = "cyan";
+        }
+        function CHange() {
+            console.log(this.value);//works when blur mode is triggered
+        }
+        function INput() {
+            console.log(this.value);//works when a new input is genrated
+        }
+
+        textfield.addEventListener("focus", FOcus);
+        textfield.addEventListener("blur", BLur);
+        textfield.addEventListener("change", CHange);
+        textfield.addEventListener("input", INput);
+        r.addEventListener("change", CHange);
+    </script>
+</body>
+
+</html>

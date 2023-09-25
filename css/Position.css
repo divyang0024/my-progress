@@ -1,0 +1,61 @@
+body {
+    height: 5000px;
+    background-color: black;
+}
+
+#parent {
+    color: red;
+    height: 100px;
+    width: 100px;
+    border: 5px solid red;
+    margin: 100px;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    text-align:center;
+    /*considered position if values like relative,absoulute and fixed are applied but if static is applied then the element will not be considered as positioned*/
+}
+
+#one {
+    border: 5px solid green;
+    color: green;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding:10px;
+    position: fixed;
+    /*calculates the position from the viewport and let other element occupy its space */
+    top: 0px;
+    left: 0px;
+    vertical-align: middle;
+    text-align:center;
+}
+
+#two {
+    border: 5px solid blue;
+    color: blue;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding:10px;
+    position: relative;
+    /*do not leaves its space and calculate position from its intial state*/
+    bottom: 50px;
+    right: 20px;
+    vertical-align: middle;
+    text-align:center;
+}
+
+#three {
+    border: 5px solid yellow;
+    color: yellow;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    padding:10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    vertical-align: middle;
+    text-align:center;
+}

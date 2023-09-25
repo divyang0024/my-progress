@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p::first-letter {
+            /* changes applied to first letter of the element */
+            font-size: 50px;
+            font-style: italic;
+        }
+
+        p::first-line {
+            /* changes applied to first line of the element */
+            font-variant: small-caps;
+            color: crimson;
+        }
+
+        h1::selection {
+            /* when we select a part with the help of cursor by default the background color turns blue and the font color appears to be white but we can change selection property with the help of "::selection" pseudo-element.  */
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+
+        body {
+            color: rgb(34, 33, 33);
+            border: 5px solid black;
+            background-color: beige;
+        }
+
+        input::placeholder {
+            background-color: cornflowerblue;
+        }
+
+        #flag {
+            width:100px;
+            color: blue;
+            text-align: center;
+            background-color: white;
+            box-sizing: border-box;
+            background-image: linear-gradient(to bottom, rgba(255rgba(255, 255, 255, 0.462), 0, 0.469), white, rgb(0, 128, 0));
+        }
+
+        #flag::before {
+            content: ".";
+            color: orange;
+            display: block;
+            background-color: orange;
+        }
+
+        #flag::after {
+            content: ".";
+            color: green;
+            display: block;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pseudo elements are denoted by "::" symbole in the of form of suffix -->
+</body>
+<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eius.</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore facilis repellendus deserunt aperiam atque cumque,
+    est, amet iusto labore ducimus culpa. Porro aspernatur accusantium nostrum expedita nam eaque magnam qui, architecto
+    ullam possimus beatae asperiores iure repudiandae praesentium cumque, ipsum accusamus dolorum reiciendis culpa,
+    distinctio totam rem voluptates quia esse. Nostrum asperiores corrupti dicta cumque consequatur illo atque velit
+    possimus soluta autem, sapiente optio fugiat necessitatibus rerum earum fuga quo deleniti? Odio quasi, sit, in ipsa
+    odit sed tempore molestias ipsam repellat hic sapiente accusantium quaerat eius officia consequuntur. Eum laudantium
+    animi sint nulla alias eius, cupiditate at dolores recusandae?</p>
+<ul>ul1
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+    <li>li4</li>
+    <li>li5</li>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, non vel! Natus dolorem amet tenetur, sed
+        deserunt a modi corporis neque iure magni, dolorum officia quo! Minus quas exercitationem rem qui minima
+        inventore? Pariatur animi laboriosam fuga ipsa itaque eligendi commodi molestiae inventore, quo doloribus vel
+        cupiditate aperiam id? In. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id magnam suscipit a!
+        Necessitatibus suscipit ut officia cumque non optio itaque explicabo at inventore molestiae? Corrupti vitae
+        atque magnam accusamus, nostrum libero quisquam, molestiae natus cumque aut ullam vero, dignissimos culpa ab.
+        Doloremque a laborum hic placeat nesciunt quod, dolorum natus!</p>
+    <input type="text" placeholder="lorem">
+
+    <pre id="flag">*</pre>
+
+</ul>
+
+</html>

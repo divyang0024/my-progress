@@ -1,0 +1,22 @@
+.Display {
+    height: 200px;
+    border: 5px solid black;
+    display: inline-block;
+}
+
+#div1 {
+    display: none;
+    /*hides the element without leaving the space for it*/
+}
+
+#div2 {
+    visibility:hidden;
+    /*hides the element but it leaves the space for the element*/
+}
+
+/*block element takes full width and it starts from new line and we can even set height and width of block elements*/
+/*but it's totally contrary in the case of inline as following things are not possible:
+1.no full width
+2.do not starts from new line
+3.height and width can't be set*/
+/*whereas the properties of both inline as well as block element can be incorporated in a single unit with the help of "inline-block"*/

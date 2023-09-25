@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(165, 42, 104);
+            padding: 5px;
+            box-sizing: border-box;
+            list-style-position: inside;
+            list-style-type: lower-roman;
+            border: 2px inset black;
+            border-radius: 10px;
+            margin: -5px;
+        }
+        
+        ol {
+            height: calc(70%);
+            background-color: rgb(246, 90, 90);
+            padding: 20px;
+            list-style-position: inside;
+            list-style-type: lower-roman;
+            border: 2px inset black;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 10px;
+        }
+        
+        li {
+            background-color: rgb(126, 95, 160);
+            border: 2px inset black;
+            margin: 5px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        
+        div {
+            font-size: calc(15%+30%);
+            min-height: 700px;
+            min-width: 100px;
+            height: 820px;
+            width: 370px;
+            box-sizing: border-box;
+            overflow: auto;
+            resize: both;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            box-sizing: calc(100%);
+            transition-property: all;
+            transition-duration: 1000ms;
+            transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        }
+
+        .li1 {
+            height: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>MENU
+            <li class="li1">DESSERT
+                <oL>
+                    <li>pancake</li>
+                    <li>pudding</li>
+                    <li>ladoo</li>
+                </oL>
+            </li>
+            <li class="li1">JUNK FOOD
+                <oL>
+                    <li>burger</li>
+                    <li>fries</li>
+                    <li>pizza</li>
+                </oL>
+            </li>
+            <li class="li1">SNACKS
+                <oL>
+                    <li>pani-puri</li>
+                    <li>tikka</li>
+                    <li>samosa</li>
+                </oL>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

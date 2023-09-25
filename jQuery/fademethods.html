@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="box" style="border:2px solid black;height:100px;background-color:cornflowerblue"></div>
+    <button id="fadeout">fadeout</button>
+    <button id="fadein">fadein</button>
+    <button id="fadetoggle">fadetoggle</button>
+    <button id="fadeto">fadeto</button>
+    <script>
+        $(function () {
+            $("#fadeout").click(function () {
+                $("#box").fadeOut("fast");
+            });
+            $("#fadein").click(function () {
+                $("#box").fadeIn("slow");
+            });
+            $("#fadetoggle").click(function () {
+                $("#box").fadeToggle(2000, function () {
+                    alert("fadetoggle invoked!!!!.");
+                });
+            });
+            $("#fadeto").click(function () {
+                $("#box").fadeTo(2000, 0.5, function () {
+                    alert("fadeto invoked!!!!.");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+#ObjectFit {
+    /*object fit is given for foreground image and videos where we use diffrent properties same as background image*/
+    height: 500px;
+    width: 100vw;
+    border: 5px solid black;
+    object-fit: contain;
+    /*same like background-size property of css background*/
+    /*we can put contain/cover/fill*/
+    /*contain will not change the aspect ratio*/
+    /*cover will not change aspect artio but it will cut the image so it could it fill the gap*/
+    /*it will the aspect ratio and fill the gap*/
+    object-position: left bottom;
+    /*it is just like background size prperty of css background */
+    /*can put grids/coordinates/%*/
+}

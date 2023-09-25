@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            border: 5px outset white;
+            margin-left: 720px;
+            color: white;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="p1" style="background-color:red;">red for click</p>
+    <p id="p2" style="background-color:orange;">orange for double click</p>
+    <p id="p3" style="background-color:blue;">blue for context menu</p>
+    <p id="p4" style="background-color:yellow;">yellow for mouse down </p>
+    <p id="p5" style="background-color:green;">green for mouse up</p>
+    <div id="box">
+        click me
+    </div>
+    <script>
+        let box = document.getElementById("box");
+        box.addEventListener("click", function () {
+            box.style.backgroundColor = "red";
+            box.style.border = "5px inset white";
+            console.log("click event");
+            let s = document.getElementById("p1");
+            s.style.cssText = "color:red;transition:1s;";
+        });
+        box.addEventListener("dblclick", function () {
+            box.style.backgroundColor = "orange";
+            box.style.border = "5px inset white";
+            console.log("double click");
+            let s = document.getElementById("p2");
+            s.style.cssText = "color:orange;transition:1s;";
+        });
+        box.addEventListener("contextmenu", function () {
+            box.style.backgroundColor = "blue";
+            box.style.border = "5px inset white";
+            console.log("right click");
+            let s = document.getElementById("p3");
+            s.style.cssText = "color:blue;transition:1s;";
+        });
+        box.addEventListener("mousedown", function () {
+            box.style.backgroundColor = "yellow";
+            box.style.border = "5px inset white";
+            console.log("mouse down");
+            let s = document.getElementById("p4");
+            s.style.cssText = "color:yellow;transition:1s;";
+        });
+        box.addEventListener("mouseup", function () {
+            box.style.backgroundColor = "green";
+            box.style.border = "5px inset white";
+            console.log("mouse up");
+            let s = document.getElementById("p5");
+            s.style.cssText = "color:green;transition:1s;";
+        });
+        // mouse-over and mouse-out are also part of mouse event.
+    </script>
+</body>
+
+</html>

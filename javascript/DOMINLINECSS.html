@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<h1 style="background-color:cyan;">this is a program to demonstrate DOM inline style</h1>
+
+<body>
+    <script>
+        document.getElementsByTagName("h1")[0].style.cssText += "color:blue";
+        document.getElementsByTagName("h1")[0].setAttribute("style", "filter:blur(1px);");
+        document.getElementsByTagName("h1")[0].style.border = "5px inset black";
+    </script>
+</body>
+
+</html>

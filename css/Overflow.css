@@ -1,0 +1,14 @@
+#Overflow {
+    /* by default overflow value is "visible" */
+    /* but we can set it to "hidden" */
+    /* there is one more property which automatically defines the need of overflow property */
+    /* there are three types of overflow property in CSS:
+    1.overflow:;
+    2.overflow-x:;
+    3.overflow-y:; */
+    height: 30vh;
+    width: 30vw;
+    border: 5px inset;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255,0.5)20%, cyan);
+    overflow: auto;
+}

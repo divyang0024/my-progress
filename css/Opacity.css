@@ -1,0 +1,24 @@
+#Opacity {
+    width: 50vw;
+    height: 25vh;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: red;
+    background-image: url('Images/Landscape-Color.jpg');
+    background-size: 60vw 35vh;
+    margin: 10px;
+    font-size:1vw;
+}
+
+#Opacity:hover {
+    width: 50vw;
+    height: 25vh;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: red;
+    background-image: url('Images/Landscape-Color.jpg');
+    background-size: 60vw 35vh;
+    margin: 10px;
+    opacity: 0.5;
+    cursor: not-allowed;
+}

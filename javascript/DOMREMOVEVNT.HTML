@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button id="btn1">button 1</button>
+    <script>
+        function fun1() {
+            console.log("function 1 has been invoked!!!!.");
+            let btn2 = document.getElementById("btn1").cloneNode(true);
+            btn2.textContent = "button 2";
+            btn2.id = "btn2";
+            document.body.appendChild(btn2);
+        }
+        function fun2() {
+            console.log("function 2 has been invoked!!!!.");
+        }
+        document.getElementById("btn1").addEventListener("click", fun1);
+        document.getElementById("btn1").addEventListener("click", fun2);
+        document.getElementById("btn1").removeEventListener("click", fun2);
+    </script>
+</body>
+
+</html>

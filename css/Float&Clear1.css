@@ -1,0 +1,19 @@
+#box1 {
+    width: 20%;
+    background-color: rgba(95, 158, 160, 0.5);
+    height: 20%;
+    float: left;
+    overflow: auto;
+}
+
+#box2 {
+    background-color: rgb(137, 220, 20);
+}
+
+#box3 {
+    width: 10%;
+    background-color: rgba(220, 20, 60, 0.5);
+    height: 10%;
+    float: left;
+    overflow: auto;
+}

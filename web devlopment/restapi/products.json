@@ -1,0 +1,162 @@
+[
+    {
+        "name": "iPhone 13 Pro",
+        "price": 1099.99,
+        "featured": false,
+        "rating": 4.7,
+        "created_at": "2023-09-09T10:00:00Z",
+        "company": "Apple"
+    },
+    {
+        "name": "Galaxy S21 Ultra",
+        "price": 1199.99,
+        "featured": false,
+        "rating": 4.6,
+        "created_at": "2023-09-08T14:30:00Z",
+        "company": "Samsung"
+    },
+    {
+        "name": "MacBook Pro",
+        "price": 1999.99,
+        "featured": false,
+        "rating": 4.8,
+        "created_at": "2023-09-07T16:45:00Z",
+        "company": "Apple"
+    },
+    {
+        "name": "XPS 13",
+        "price": 1299.99,
+        "featured": false,
+        "rating": 4.5,
+        "created_at": "2023-09-06T09:15:00Z",
+        "company": "Dell"
+    },
+    {
+        "name": "Mi 11",
+        "price": 799.99,
+        "featured": false,
+        "rating": 4.4,
+        "created_at": "2023-09-05T11:20:00Z",
+        "company": "Xiaomi (Mi)"
+    },
+    {
+        "name": "iPad Air",
+        "price": 599.99,
+        "featured": true,
+        "rating": 4.5,
+        "created_at": "2023-09-04T17:30:00Z",
+        "company": "Apple"
+    },
+    {
+        "name": "Inspiron 15",
+        "price": 899.99,
+        "featured": true,
+        "rating": 4.3,
+        "created_at": "2023-09-03T08:45:00Z",
+        "company": "Dell"
+    },
+    {
+        "name": "Redmi Note 10",
+        "price": 349.99,
+        "featured": false,
+        "rating": 4.0,
+        "created_at": "2023-09-02T22:10:00Z",
+        "company": "Xiaomi (Mi)"
+    },
+    {
+        "name": "Samsung QLED TV",
+        "price": 1499.99,
+        "featured": true,
+        "rating": 4.7,
+        "created_at": "2023-09-01T13:25:00Z",
+        "company": "Samsung"
+    },
+    {
+        "name": "Mac Mini",
+        "price": 699.99,
+        "featured": false,
+        "rating": 4.6,
+        "created_at": "2023-08-31T19:50:00Z",
+        "company": "Apple"
+    },
+    {
+        "name": "XPS 15",
+        "price": 1599.99,
+        "featured": true,
+        "rating": 4.5,
+        "created_at": "2023-08-30T12:15:00Z",
+        "company": "Dell"
+    },
+    {
+        "name": "Mi Band 6",
+        "price": 49.99,
+        "featured": true,
+        "rating": 4.2,
+        "created_at": "2023-08-29T23:05:00Z",
+        "company": "Xiaomi (Mi)"
+    },
+    {
+        "name": "iPhone SE",
+        "price": 399.99,
+        "featured": true,
+        "rating": 4.3,
+        "created_at": "2023-08-28T09:00:00Z",
+        "company": "Apple"
+    },
+    {
+        "name": "Alienware Aurora",
+        "price": 2299.99,
+        "featured": true,
+        "rating": 4.8,
+        "created_at": "2023-08-27T15:40:00Z",
+        "company": "Dell"
+    },
+    {
+        "name": "Redmi AirDots",
+        "price": 29.99,
+        "featured": true,
+        "rating": 4.1,
+        "created_at": "2023-08-26T18:55:00Z",
+        "company": "Xiaomi (Mi)"
+    },
+    {
+        "name": "Samsung Odyssey G7",
+        "price": 699.99,
+        "featured": true,
+        "rating": 4.7,
+        "created_at": "2023-08-25T14:30:00Z",
+        "company": "Samsung"
+    },
+    {
+        "name": "iMac",
+        "price": 1799.99,
+        "featured": true,
+        "rating": 4.6,
+        "created_at": "2023-08-24T20:20:00Z",
+        "company": "Apple"
+    },
+    {
+        "name": "Dell Ultrasharp Monitor",
+        "price": 499.99,
+        "featured": true,
+        "rating": 4.4,
+        "created_at": "2023-08-23T11:10:00Z",
+        "company": "Dell"
+    },
+    {
+        "name": "Xiaomi (Mi) Power Bank",
+        "price": 39.99,
+        "featured": true,
+        "rating": 4.0,
+        "created_at": "2023-08-22T16:00:00Z",
+        "company": "Xiaomi (Mi)"
+    },
+    {
+        "name": "Samsung Galaxy Watch",
+        "price": 249.99,
+        "featured": true,
+        "rating": 4.5,
+        "created_at": "2023-08-21T19:30:00Z",
+        "company": "Samsung"
+    }
+]

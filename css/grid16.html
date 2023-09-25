@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 200px 0px 0px 800px;
+        }
+
+        #parent {
+            height: 300px;
+            width: 300px;
+            background-color: grey;
+            border: 2px solid black;
+            display: grid;
+            padding: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        #div1 {
+            background-color: crimson;
+            grid-row: 1/ span 2;
+            grid-column: 1/ span 1;
+            align-self: start;
+            justify-self: start;
+            z-index: 3;
+        }
+
+        #div2 {
+            background-color: chartreuse;
+            grid-row: 1/ span 2;
+            grid-column: 1/ span 2;
+            justify-self: center;
+            align-self: center;
+            z-index: 2;
+        }
+
+        #div3 {
+            background-color: cornflowerblue;
+            grid-row: 1/ span 2;
+            grid-column: 1/ span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 1;
+        }
+
+        .children {
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            max-width: 125px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="parent">
+            <div class="children" id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sed.
+            </div>
+            <div class="children" id="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, illo!</div>
+            <div class="children" id="div3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, officia!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

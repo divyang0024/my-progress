@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 50vh;
+            width: 50vw;
+        }
+
+        #parent {
+            height: 100%;
+            background-color: darkgray;
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 50px);
+            padding: 10px;
+            grid-gap: 20px;
+            border: 2px solid black;
+            grid-auto-rows: 50px;
+            grid-auto-flow: column dense;
+            place-content: center space-around;
+        }
+
+        .children {
+            text-align: center;
+            font-size: 40px;
+            background-color: coral;
+            border: 2px solid black;
+        }
+
+
+        #div5 {
+            grid-area: 2/1/3/4;
+        }
+
+        #div7 {
+            grid-area: 4/3/5/4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- in order to align tracks we use align-content and justify content -->
+    <!-- the items are aligned on the basis of parent container instead of grid cell. -->
+    <!-- start,center,end works in the same manner in respect of contsniner. -->
+    <!-- space between is used to align content end to end leaving some space between the container. -->
+    <!-- space around doubles up the start and end space -->
+    <!-- space evenly leaves space between grid cells evenly. -->
+    <!-- to fill unfilled space we use grid-auto-flow:dense.  -->
+    <!-- place-content works in the same manner as place-item. -->
+    <!-- this proprty works only when there is some blank space in the container if the container space fully utilized by the grid cells then it will not work. -->
+</body>
+<div id="parent">
+    <div class="children" id="div1">1</div>
+    <div class="children" id="div2">2</div>
+    <div class="children" id="div3">3</div>
+    <div class="children" id="div4">4</div>
+    <div class="children" id="div5">5</div>
+    <div class="children" id="div6">6</div>
+    <div class="children" id="div7">7</div>
+    <div class="children" id="div8">8</div>
+    <div class="children" id="div9">9</div>
+</div>
+
+</html>

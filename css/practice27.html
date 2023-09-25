@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            height: 20vh;
+            width: 30vw;
+            border: 2px solid black;
+            position: fixed;
+            top: 20%;
+            left: 20%;
+            animation-name: box-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+            /* animation-delay: 2s; */
+            animation-direction: alternate-reverse;
+            /* normal : "from-to" */
+            /* alternate : from-to-from */
+            /* reverse : to-from */
+            /* alternate-reverse:to-from-to */
+            animation-fill-mode: both;
+            /*skips the intial stage but ends with intail stage*/
+            /*animation-fill-mode: forwards;start with intial stage but in the end the intial stage is skipped*/
+            /*animation-fill-mode:both;skips both intial and end stage*/
+            /* animation animation-play-state: paused; */
+            /* animation animation-play-state: running; */
+        }
+
+        @keyframes box-animation {
+            0% {
+                background-color: black;
+                border-radius: 1000px;
+            }
+
+            25% {
+                background-color: rgb(255, 0, 0);
+                border-radius: 200px;
+
+            }
+
+            50% {
+                background-color: green;
+                border-radius: 300px;
+
+            }
+
+            75% {
+                background-color: blue;
+                border-radius: 400px;
+
+            }
+
+            100% {
+                background-color: yellow;
+                border-radius: 500px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

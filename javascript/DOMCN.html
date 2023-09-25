@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is a program to demonstrate dom element by class name.</h1>
+    <ul>
+        <li class="cl cl1">first.</li>
+        <li class="cl">second.</li>
+        <li class="cl cl1">third.</li>
+    </ul>
+    <script>
+        console.log(
+            document.getElementsByClassName("cl cl1")[1].innerHTML);
+        let x = document.getElementsByClassName("cl cl1");
+        let size = x.length;
+        for (let i = 0; i <= size; i++) {
+            x[i].innerHTML = "changed!!!!";
+        }
+    </script>
+</body>
+
+</html>

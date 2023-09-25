@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        #red {
+            background-color: crimson;
+        }
+
+        #blue {
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, similique.</p>
+    <h1>this is a heading.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, similique.</p>
+    <button id="wrapall">wrapall</button>
+    <button id="wrapinside">wrapinside</button>
+    <script>
+        $(document).ready(function () {
+            $("#wrapall").click(function () {
+                $("p").wrapAll("<div id='red'></div>");
+            });
+            $("#wrapinside").click(function () {
+                $("h1").wrapInner("<i id='blue'></i>");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

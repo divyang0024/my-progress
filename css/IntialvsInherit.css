@@ -1,0 +1,13 @@
+#parent {
+    color: blue
+}
+
+#child1 {
+    color: initial
+        /*intial take default state of element property*/
+}
+
+#child2 {
+    color: inherit
+        /*inherit takes the element property from the parent*/
+}

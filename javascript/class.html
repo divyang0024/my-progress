@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function randomstuff() {
+            this.country = "India";
+            this.fun = function () {
+                console.log('do somthing!!!!.');
+            }
+        }
+        let obj1 = new randomstuff();
+        class person {
+            name;
+            age;
+            gender;
+            city;
+            phone_no;
+            #address = '';//private access modifier.
+            static species() {
+                let species = "human";
+            }
+            constructor(name, age, gender, city, phone_no, address) {
+                console.log("person constructor was called!!!!.");
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.city = city;
+                this.phone_no = phone_no;
+                this.#address = address;
+            }
+            set_data() {
+                document.write(this.name);
+                document.write(this.age);
+                document.write(this.gender);
+                document.write(this.city);
+                document.write(this.phone_no);
+                document.write(this.#address);
+            }
+        }
+        class programmer extends person {
+            constructor() {
+                super();
+                console.log("programmer constructor was called!!!!.");
+            }
+        }
+        Object.assign(programmer.prototype, obj1);//mixing
+        console.log(new programmer().fun());
+        console.log(new programmer().country);
+        console.log(new programmer());
+    </script>
+</body>
+
+</html>

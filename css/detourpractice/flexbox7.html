@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #container {
+            border: 5px solid black;
+            padding: 5px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+        }
+
+        #child {
+            background-color: chartreuse;
+            border: 2px solid black;
+            height: 80%;
+            margin: 5px;
+            padding: 5px;
+            flex-grow: 1;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .b2d {
+            background-color: crimson;
+            flex-grow: 1;
+            margin: 5%;
+            height: 20%;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="child" class="box">box1</div>
+        <div id="child" class="box">
+            <div class="b2d">box</div>
+            <div class="b2d">box</div>
+            <div class="b2d">box</div>
+        </div>
+        <div id="child" class="box">box3</div>
+    </div>
+</body>
+
+</html>

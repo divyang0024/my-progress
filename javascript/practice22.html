@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="div1" class="parent" style="color:red;"></div>
+    <script>
+        let p = document.getElementById("div1");
+        p.setAttribute("height", "10px");
+        console.log(p.getAttribute("style"));
+        console.log(p.hasAttribute("style"));
+        p.removeAttribute("style");
+        p.style.color = "red";
+        p.style.cssText = "color:cornflowerblue; font-size:10px;";
+        p.setAttribute("style", "line-height:10px;");
+    </script>
+</body>
+
+</html>

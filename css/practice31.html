@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            height: 500px;
+            width: 800px;
+            margin: 25vh 0px 0px 15vw;
+            background-color: darkgray;
+            border: 5px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            /* align-items: end; */
+            align-items: flex-end;
+            /* justify-content: ; */
+            /* in the case of column of column things work in a oppposite manner. */
+            /* justify-item and align-content does not not work in the case of flex-box. */
+            /* align-content:flex-end; */
+            /* align-content will worl only and only if the flex-direction is not specified. */
+        }
+
+        .children {
+            border: 2.5px solid black;
+            width: 200px;
+        }
+
+        #div1 {
+            order: 9;
+            /* by default the value is 0 */
+            /* with the help of order we can postion flex-items. */
+        }
+
+        #div2 {
+            order: 8;
+        }
+
+        #div3 {
+            order: 7;
+        }
+
+        #div4 {
+            order: 6;
+        }
+
+        #div5 {
+            order: 5;
+        }
+
+        #div6 {
+            order: 4;
+        }
+
+        #div7 {
+            order: 3;
+        }
+
+        #div8 {
+            order: -2;
+        }
+
+        #div9 {
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <!-- tn the case of row: -->
+        <!-- align-item:aligns flex items vertically. -->
+        <!-- justify-content:aligns flex items horizontally. -->
+        <!-- in the case of column: -->
+        <!-- align-item:aligns flex items horizontally. -->
+        <!-- justify-content:aligns flex items vertically. -->
+        <div class="children" id="div1">one</div>
+        <div class="children" id="div2">two</div>
+        <div class="children" id="div3">three</div>
+        <div class="children" id="div4">four</div>
+        <div class="children" id="div5">five</div>
+        <div class="children" id="div6">six</div>
+        <div class="children" id="div7">seven</div>
+        <div class="children" id="div8">eight</div>
+        <div class="children" id="div9">nine</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "qr-code-genrator",
+  "version": "1.0.0",
+  "description": "an web app that genrate qr codes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "divyang",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.8",
+    "qr-image": "^3.2.0"
+  }
+}

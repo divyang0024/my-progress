@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            height: 500px;
+            width: 500px;
+            display: grid;
+            background-color: darkgrey;
+            box-sizing: border-box;
+            border: 2px solid black;
+            grid-template-columns: repeat(2, auto)200px;
+            grid-template-rows: repeat(2, auto)50px;
+            grid-gap: 10px;
+        }
+
+        .grid1 {
+            background-color: lightslategrey;
+            box-sizing: border-box;
+            border: 2px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- there has to be a parent container for containing grids cells and we can make that happen by "display: grid"  -->
+    <!-- there are straight lines between each cells which seprates two or more "grid cells" and it results in creating gaps,the gaps are bascially "gutterr" -->
+    <!-- horizontal grid alingment are "grid rows" -->
+    <!-- vertical grid alingment are "grid column" -->
+    <!--the empty spaces between grid cells are "grid area"  -->
+    <!-- column-template-gap:fr:decide the number of column and its width,"fr" is a special unit only meant for grid it is basically like "em". -->
+    <!-- grid-template-rows:determines the height of rows. -->
+    <!-- grid-gap:leaves some spaces between grid cells. -->
+    <!-- repeat(number of column,width) it has to be used in the form of arguments.-->
+    <div id="parent">
+        <div class="grid1">grid1</div>
+        <div class="grid1">grid2</div>
+        <div class="grid1">grid3</div>
+        <div class="grid1">grid4</div>
+        <div class="grid1">grid5</div>
+        <div class="grid1">grid6</div>
+        <div class="grid1">grid7</div>
+        <div class="grid1">grid8</div>
+        <div class="grid1">grid9</div>
+    </div>
+</body>
+
+</html>

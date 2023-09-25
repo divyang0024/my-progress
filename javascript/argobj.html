@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a programn to demonstrate argument object.</h1>
+    <script>
+        function display() {
+            let sum = 0;
+            for (let i = 0; i < arguments.length; i++) {
+                document.write(`${arguments[i]} <br/>`)
+                sum += arguments[0];
+            }
+            return sum;
+        }
+        let result = display(12, 23, 34, 45, 56, 67, 78, 89, 100);
+        alert(`the sum is : ${result}`);
+    </script>
+</body>
+
+</html>

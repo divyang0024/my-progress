@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="box" style="border:2px solid black;background-color: cornflowerblue; padding:5px;">
+        <h1>this is a heading.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut illo quo saepe voluptatum, alias mollitia
+            molestias. Sit similique perspiciatis omnis numquam qui ad optio illum amet, dolorem corrupti quos incidunt
+            vel inventore accusantium fuga exercitationem cupiditate accusamus magni beatae pariatur error. Ratione
+            laudantium perferendis praesentium eius neque labore saepe! Laboriosam optio quos facere perferendis, nihil
+            est itaque assumenda accusamus quas eum tenetur amet molestiae impedit? Nulla saepe eius vitae
+            necessitatibus ipsam consequatur repellat voluptates aperiam magni voluptatem mollitia facilis iure
+            laudantium qui, soluta enim sint debitis ipsum dignissimos quo. Quam praesentium iste nulla quaerat, iure
+            voluptatem vero corporis rem voluptate.</p>
+        <button>click me</button>
+    </div>
+    <h2></h2>
+    <h3></h3>
+    <script>
+        $(function () {
+            $("#box").click(function (e) {
+                $("h2").text("element clicked : " + e.target.nodeName);
+                $("h3").text("clicked element content : " + e.target.innerHTML);
+            });
+        });
+    </script>
+</body>
+
+</html>

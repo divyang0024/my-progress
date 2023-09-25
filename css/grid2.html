@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            height: 500px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            row-gap: 10px;
+            column-gap: 10px;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+
+        .child {
+            background-color: darkgoldenrod;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- grid-gap is basically mixture of both grid-row-gap and grid-column gap -->
+    <!-- horizontal gaps are grid rows gap -->
+    <!-- vertical gaps are grid column gap -->
+    <!--  -shorthand for grid gap is :
+        grid-gap:rows-gap column gap-->
+    <div id="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+</body>
+
+</html>

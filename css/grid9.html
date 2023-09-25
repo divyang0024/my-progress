@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            height: 50vh;
+            width: 50vw;
+            background-color: whitesmoke;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+            border: 2px solid black;
+            place-items: center;
+        }
+
+        .children {
+            background-color: cornflowerblue;
+            text-align: center;
+            color: white;
+            font-size: 100px;
+            border: 2px solid black;
+        }
+
+        #div1 {
+            grid-area: 1/1/span 2/2;
+            place-self: start right;
+        }
+
+        #div2 {
+            justify-self: start;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- align-items is used to vertically align the content inside pf grid cells,by default the value is stretch,other values are start end center and it is used inside the parent. -->
+    <!-- align-self works in the same manner the only diffrnce is that it is used by individual cells. -->
+    <!-- for the horizontal alignment we use justify-items and justify-self, both of the properpty works in the same manner.-->
+    <!--shorthand for for both is place-item and place-self and the first value is items and second one is self. -->
+    <div id="parent">
+        <div id="div1" class="children">1</div>
+        <div id="div2" class="children">2</div>
+        <div id="div3" class="children">3</div>
+        <div id="div4" class="children">4</div>
+    </div>
+</body>
+
+</html>

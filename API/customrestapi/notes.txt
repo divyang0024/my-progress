@@ -1,0 +1,22 @@
+there are various monetised APIs which people use to make software and web application,but in genral there are 2 types of montised APIs :
+
+1. data collection APIs : data collection api consists of huge chunk of data which contains various types of information which could useful while building a software.(ex:wheather-api)
+
+2. algorithm service APIs : such APIs are made to fulfill the need of writing complex algorithm and logic which might take a lot of time and efforts,such APIs provide you with readymade solution which you could use to develop your own application.(ex:chatgpt)
+
+REST API :
+
+REST api stands for "representational state transfer api" and it describes how an api should work.
+
+REST API RULES :
+
+1. HTTP methods : a api is called restful when we use http methods thats contains methods like :
+get,post,put,patch,delete.
+
+2. JSON output : an api always sends output in json and xml.
+
+3. clien-server : an api is restful when client and server are seprated from each other and they intract with each other via a network.
+
+4. stateless : no client side information is needed only specific data is passed down by client in order to make api do its job. it dont lookup to request states which might be made an client.
+
+5. resource-based : it means that an api consists of resoureces that can be accessed through specific uri or url.

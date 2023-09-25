@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            height: 250px;
+            width: 250px;
+            border: 5px solid black;
+            background-color: coral;
+            position: absolute;
+            top: 25vh;
+            left: 25vw;
+            /* rotate helps in rotating an element. */
+            /* transform:skew(50deg,60deg); */
+            /* transform: skewX(45deg); */
+            /* transform: skewY(45deg); */
+            transform-origin: top left;
+            transition: all;
+            transition-duration: 500ms;
+        }
+
+        div:hover {
+            transform: rotate(180deg);
+            transform: translate(45px, 0px);
+            transform: translateX(45px);
+            transform: translateY(45px);
+            transform: scale(2.5, 2.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="/images/arrow.png" alt="" height="50%" width="50%">
+    </div>
+</body>
+
+</html>

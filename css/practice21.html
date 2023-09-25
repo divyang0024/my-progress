@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div p {
+            color: brown;
+            /*this is a descendant selector*/
+        }
+
+        div#div1>p {
+            color: cadetblue;
+            /*this is a direct child selector*/
+        }
+
+        #div1~p {
+            border: 2px solid black;
+            /*this is a adjacent sibling selector*/
+        }
+
+        #div1+p {
+            border: 2px dotted red;
+            /*this is a genral sibling selector*/
+        }
+
+        #p {
+            column-count: 10;
+            column-width: 10px;
+            column-gap: 5px;
+            column-rule: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <p>this is a para 1.</p>
+        <div>
+            <p>this is a para 2.</p>
+        </div>
+        <p>this is a para 3.</p>
+    </div>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <h1>this is a heading.</h1>
+    <p id="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, fugiat assumenda placeat odit voluptas
+        magnam ullam similique necessitatibus dolore ad amet! Unde velit distinctio, recusandae repellat illo ad maxime
+        atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci quae nobis recusandae tenetur!
+        Aliquam perferendis, mollitia assumenda dolores fugiat voluptas ab a debitis sint harum! Ratione blanditiis modi
+        beatae ad, alias eum dolorem nemo fuga aspernatur ex assumenda minima, ea recusandae unde illum. Maiores non
+        aliquam nulla suscipit, quo assumenda enim quas nemo modi quia quam necessitatibus quis amet tempora excepturi
+        voluptate vero veritatis eos sequi dolorem eius incidunt. Dolorum, ea quas soluta delectus eum dolore
+        reprehenderit? Eveniet laudantium eum fugiat sunt corporis quo unde nesciunt vero atque adipisci pariatur
+        nostrum, ex vel animi saepe consequatur sequi enim error.</p>
+</body>
+
+</html>

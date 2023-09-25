@@ -1,0 +1,12 @@
+:root {
+    --bg-color: blue;
+    /*we can change the property of whole website without changing it individauly*/
+}
+
+.Function {
+    height: 100px;
+    width: calc(100% - 500px);
+    border: 5px solid black;
+    padding: 10px;
+    background-color: var(--bg-color);
+}

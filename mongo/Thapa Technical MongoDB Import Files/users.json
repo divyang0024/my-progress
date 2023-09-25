@@ -1,0 +1,76 @@
+{
+    "_id": {
+        "$oid": "64f48fd6772a1280120076f4"
+    },
+    "username": "divyang",
+    "password": "ddf",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "64f494589f4ca9b36867976b"
+    },
+    "username": "div",
+    "password": "sds",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "64f49488e1ca0bd90b678688"
+    },
+    "username": "divyang0024",
+    "password": "rtrt",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "64f4949c9101d26fd6d43f4b"
+    },
+    "username": "d",
+    "password": "weryty",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "64f495366756133907807afb"
+    },
+    "username": "sd",
+    "password": "sdsdsd",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "64f85e5dabee6bd5e6cbf938"
+    },
+    "username": "deeshu ",
+    "password": "qwertyuiop",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "64f9ca7c4f7fa8609c78e9f6"
+    },
+    "username": "lalita",
+    "password": "343ryeeryyey5",
+    "__v": 0
+}
+{
+    "_id": {
+        "$oid": "64f9dc550117eaef59608078"
+    },
+    "0": {
+        "name": "dv",
+        "password": "sgkdsgklsdk"
+    },
+    "1": {
+        "name": "dm",
+        "password": "324434345"
+    }
+}
+{
+    "_id": {
+        "$oid": "64f9de280117eaef59608079"
+    },
+    "name": "dv",
+    "password": "sgkdsgklsdk"
+}

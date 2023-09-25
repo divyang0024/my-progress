@@ -1,0 +1,23 @@
+.bold {
+    text-decoration: underline;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.yellow {
+    color: yellow;
+}
+
+h2.yellow {
+    color: goldenrod
+}
+
+.blue {
+    color: blue;
+}
+
+#head2 {
+    font-style: italic;
+}

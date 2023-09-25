@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: fs;
+            src: url('/Fonts/MutantAcademyDCBB.ttf');
+        }
+
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: fs;
+            color: #EEEEEE;
+        }
+
+        body {
+            background-image: linear-gradient(to right, #393e4694, #eeeeee8f), url('https://i.ytimg.com/vi/IOfnCoc4ig4/maxresdefault.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #wrapper {
+            border: 2px solid #EEEEEE;
+            border-radius: 10px;
+            background-color: #393e4681;
+            box-shadow: 5px 5px 15px 6px black;
+            margin: 0 2vw;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 10px
+        }
+
+        ul>li {
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li label {
+            flex: 1;
+        }
+
+        ul li input {
+            flex: 2;
+            border-bottom: 2px solid #EEEEEE;
+            border-top: 5px solid transparent;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            background-color: transparent;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        button {
+            margin-top: 2%;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid #EEEEEE;
+        }
+
+        @media screen and (min-width:0px) and (max-width:400px) {
+            li {
+                flex-direction: column;
+                align-content: center;
+            }
+
+            button {
+                width: 100px;
+                align-self: center;
+            }
+
+            a {
+                align-self: center;
+            }
+        }
+
+        form {
+            margin-top: 25vh;
+        }
+
+        a {
+            margin-top: 2%;
+            color: #EEEEEE;
+        }
+    </style>
+</head>
+
+<body height="100%">
+    <form action="">
+        <div id="wrapper">
+            <ul>
+                <li>
+                    <h2>LOGIN</h2>
+                </li>
+                <li><label for="name">ENTER NAME : </label>
+                    <input type="text">
+                </li>
+                <li><label for="password">ENTER PASSWORD : </label>
+                    <input type="password">
+                </li>
+                <li><button type="submit" value="confirm">confirm</li>
+                <li>
+                    <a href="">Visting our website for the first time?,Sign up!!!!. </a>
+                </li>
+            </ul>
+        </div>
+    </form>
+</body>
+
+</html>

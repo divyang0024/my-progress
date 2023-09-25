@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function students(name, section, rollno) {
+            this.name = name;
+            this.section = section;
+            this.rollno = rollno;
+        }
+        let size = parseInt(prompt("enter the number of students"));
+        let person = new Array();
+        for (let i = 0; i < size; i++) {
+            let name, section, rollno;
+            name = prompt("enter name : ");
+            section = prompt("enter section : ");
+            rollno = prompt("enter rollno : ");
+            person[i] = new students(name, section, rollno);
+        }
+        for (let j = 0; j < size; j++) {
+            for (let x in person[j]) {
+                document.write(person[j][x]);
+            }
+        }
+        console.log(person[0]);
+        console.log(person[1]);
+    </script>
+</body>
+
+</html>

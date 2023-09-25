@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html{
+            height:10000px;
+        }
+        p {
+            margin:50px;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        #parent {
+            width: 80%;
+            height: 500px;
+            border: 5px solid black;
+            position: relative;
+        }
+
+        .box {
+            height: 125px;
+            width: 125px;
+            border: 5px solid black;
+        }
+
+        #div1 {
+            background-color: chartreuse;
+            position:relative;
+            /* takes the relative or intial postion of the element and calculates the postion from there. */
+            /* it leaves space. */
+            top:300px;
+        }
+
+        #div2 {
+            background-color: crimson;
+            position:absolute;
+            bottom: 0px;
+            right:0px;
+            /* in order to use absoulute it is important to set parent position as fixed sticky relative and absolute. */
+            /* takes parent position for position calculation. */
+            /* it does not leave space. */
+        }
+
+        #div3 {
+            background-color: cornflowerblue;
+            position: fixed;
+            /* takes viewport for calculation of position */
+            /* leaves its space. */
+            right:0px;
+            top:0px;
+        }
+
+        #div4 {
+            background-color: cornsilk;
+            position: sticky;
+            top:50px;
+            /* does not leave its space */
+            /* same as fixed but it is relative to its parent */
+            /* it is combination of both fixed and absoulute because relative to parent. */
+            /* parent do not need to postion. */
+        }
+        #div5 {
+            background-color: cadetblue;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="box" id="div1">
+            <p>relative</p>
+        </div>
+        <div class="box" id="div2">
+            <p>absoulute</p>
+        </div>
+        <div class="box" id="div3">
+            <p>fixed</p>
+        </div>
+        <div class="box" id="div4">
+            <p>sticky</p>
+        </div>
+        <div class="box" id="div5">
+            <p>box</p>
+        </div>
+    </div>
+</body>
+
+</html>

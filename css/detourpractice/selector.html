@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li {
+            color: initial;
+        }
+
+        a[href="www.google.com"] {
+            text-decoration: none;
+            background-color: coral;
+        }
+
+        ol li {
+            text-decoration: overline;
+        }
+
+        #parentli>li {
+            color: red;
+        }
+
+        #parentli+p {
+            color: chartreuse;
+        }
+
+        /* it will select only the neighbouring element comin after the lidt. */
+        #parentli~p {
+            color: cornflowerblue;
+        }
+
+        /* it will select every single sibling coming after ordered list.  */
+    </style>
+</head>
+
+<body>
+    <p>para away from ordered list.</p>
+    <p>para near to ordered list.</p>
+    <ol id="parentli">
+        <li>list1</li>
+        <li>list2</li>
+        <li>list3</li>
+        <li>list4</li>
+        <li>list5</li>
+        <ol>nested list
+            <li>
+                list1
+            </li>
+            <li>
+                list2
+            </li>
+        </ol>
+
+    </ol>
+    <p>para away from ordered list.</p>
+    <p>para near to ordered list.</p>
+    <a href="www.google.com">visit google</a>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dolor.</p>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dolor.</p>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, dolor.</p>
+    <button id="replacewith">replacewith</button>
+    <button id="replaceall">replaceall</button>
+    <script>
+        $(function () {
+            $("#replacewith").click(function () {
+                $(".para").replaceWith("<h1>this is a heading.</h1>");
+            });
+            // $("#replaceall").click(function () {
+            //     $("this is para").replaceAll(".para");
+            // });text node will not work in the case of replaceAll().
+            $("#replaceall").click(function () {
+                $("<p>this is para</p>").replaceAll(".para");
+            });
+        })
+    </script>
+</body>
+
+</html>

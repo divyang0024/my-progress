@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #div1 {
+            height: 167px;
+            width: 50vw;
+            background-image: linear-gradient(to right, darkcyan, crimson);
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            transition: 1s;
+            border: 2px solid black;
+        }
+
+        #div2 {
+            height: 167px;
+            width: 50%;
+            /* background-color: darkcyan; */
+            /* border: 2px solid black; */
+            box-sizing: border-box;
+            float: left;
+            background-image: linear-gradient(to left, crimson, darkcyan);
+            transition: 1s;
+        }
+
+        #div3 {
+            height: 167px;
+            width: 50%;
+            /* background-color: darkcyan; */
+            /* border: 2px solid black; */
+            box-sizing: border-box;
+            float: right;
+            background-image: linear-gradient(to left, darkcyan, crimson);
+            transition: 1s;
+        }
+
+        .cg {
+            display: inline-block;
+        }
+
+        #div1:hover {
+            transform-origin: center;
+            padding: 50px;
+            border: 20px inset slategray;
+            border-radius: 50px;
+            height: 334px;
+        }
+
+        #div2:hover {
+            transform: translateY(50%);
+            background-color: crimson;
+            border-radius: 50px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(220, 20, 60, 0.5)), url(./Images/lighthouse.jpg);
+            background-size: cover;
+            background-position: 0px -200px;
+            background-repeat: no-repeat;
+            border: 1px dotted darkcyan;
+            border-color: darkcyan crimson;
+            border-width: 10px;
+            border-style: ridge;
+        }
+
+        #div3:hover {
+            transform: translateY(50%);
+            background-color: crimson;
+            border-radius: 50px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(220, 20, 60, 0.5)), url(./Images/lighthouse.jpg);
+            background-size: cover;
+            background-position: 0px -200px;
+            background-repeat: no-repeat;
+            border-color: darkcyan crimson;
+            border-width: 10px;
+            border-style: ridge;
+
+        }
+    </style>
+</head>
+
+<bod></bod>
+<div id="div1">
+    <div id="div2" class="cg">
+
+    </div>
+    <div id="div3" class="cg">
+
+    </div>
+</div>
+</body>
+
+</html>

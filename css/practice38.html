@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            font-size: 2vw;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+
+        #main-c {
+            height: 100vh;
+            display: flex;
+            flex-flow: row nowrap;
+            background-image: linear-gradient(to bottom, #FEDB39, #D61C4E);
+        }
+
+        #profile {
+            height: 50%;
+        }
+
+        #logout {
+            height: 50%;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        header {
+            background-color: #222831;
+            height: 100%;
+            width: 20%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+
+        #profilepic {
+            width: calc(100% - 10px);
+            /* height:calc(10%-; */
+            filter: invert(100%);
+        }
+
+        #container {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #quiz {
+            background-color: #222831;
+            height: 50%;
+            width: 70%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #start {
+            width: 20%;
+            height: 7%;
+            margin-top: 10px;
+            border-radius: 2px;
+            background-color: #393E46;
+        }
+
+        #l1 {
+            font-size: 3rem;
+        }
+        #username{
+         text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-c">
+        <header>
+            <div id="profile">
+                <img id="profilepic" src="https://cdn-icons-png.flaticon.com/512/1864/1864633.png"
+                    alt="photo of a person">
+                <p id="username">xyz person</p>
+            </div>
+
+            <div id="logout">
+                <a id="icon-bar" href=""><i class="fa-solid fa-right-from-bracket"></i>
+                    LOGOUT</a>
+            </div>
+        </header>
+        <div id="container">
+            <form id="quiz" action="">
+                <label id="l1" for="start">Start the quiz</label>
+                <input id="start" type="button" value="start">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

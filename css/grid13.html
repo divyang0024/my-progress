@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            height: 500px;
+            width: 500px;
+            display: grid;
+            font-size: 100px;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            row-gap: 10px;
+            column-gap: 10px;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+
+        .child {
+            background-color: darkgoldenrod;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+
+        #c1 {
+            order: 4;
+        }
+
+        #c2 {
+            order: 3;
+        }
+
+        #c3 {
+            order: 2;
+        }
+
+        #c4 {
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- another way of postion your grid cells is to use order. -->
+    <div id="parent">
+        <div class="child" id="c1">1</div>
+        <div class="child" id="c2">2</div>
+        <div class="child" id="c3">3</div>
+        <div class="child" id="c4">4</div>
+    </div>
+</body>
+
+</html>

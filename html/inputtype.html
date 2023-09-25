@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form autocomplete="off" validate>
+        <label for="fname">fname:</label><br>
+        <input name="firstname" type="text" id="fname"><br><br>
+        <label for="lname">lname:</label><br>
+        <input name="lastname" type="text" id="lname"><br><br>
+        <label for="birthday">your birthday: </label><br>
+        <input name="datemin" type="datetime-local" id="birthday" min="2000-01-02"><br><br>
+        <label for="myfavcol">select your favourite color: </label>
+        <input type="color" name="favcolor" id="myfavcol"><br><br>
+        <label for="email">enter your email: </label><br>
+        <input type="email" id="email" name="myemail"><br><br>
+        <label for="password">enter password:</label><br>
+        <input type="password" name="mypassword" id="password"><br><br>
+        <input type="reset" value="reset input"><br><br>
+        <button type="submit">Submit</button><br><br>
+        <input input="image" src="https://i.ytimg.com/vi/WikTOvw_Xpc/maxresdefault.jpg">
+        <input type="file" name="mydocument" value="attach document">
+        <input type="hidden" name="myname" value="sneaky sneaky"><br><br>
+        <input type="number" min="1" max="5">
+        <input type="range" min="1" max="5">
+    </form>
+</body>
+
+</html>

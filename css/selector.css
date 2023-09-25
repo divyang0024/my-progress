@@ -1,0 +1,26 @@
+/*attribute-selector*/
+/* a[href="http://www.google.com"] {
+    color: red;
+    text-decoration: none;
+}
+
+/*descandent-selector*/
+/* div li {
+    color: blue; 
+    /*selects every possible child(both direct and indirect child) irrespective of the heirarchy*/
+/* } */
+/*direct child selector(child-combinatory)*/
+#cc>li {
+    color: blueviolet;
+}
+
+/* #cc~p {/*takes the corresponding elements at same heirarchy no matter if a element comes between the changes will still be incorporated*/
+/* color: burlywood;
+}  */
+/* #cc+p { */
+/*takes the corresponding elements at same heirarchy no matter if a element comes between the changes will still be incorporated*/
+/* color: burlywood;
+} */
+div#divt p.p1 {
+    color: coral;
+}

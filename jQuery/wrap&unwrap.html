@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="div1" class="box" style="border:2px solid black">
+    </div>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, facilis.</p>
+    <button id="wrap">wrap</button>
+    <button id="unwrap">unwrap</button>
+    <script>
+        $(function () {
+            let d = $("#div1").clone();
+            $("#wrap").click(function () {
+                $("#para").wrap(d);
+            });
+            $("#unwrap").click(function () {
+                $("#para").unwrap();
+            });
+        })
+    </script>
+</body>
+
+</html>

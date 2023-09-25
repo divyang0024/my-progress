@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to appened an element with DOM.</h1>
+    <ul id="div1">
+        <li>li 1</li>
+        <li>li 2</li>
+        <li>li 3</li>
+    </ul>
+    <script>
+        let x = document.getElementById("div1");
+        let y = document.createElement('li');
+        let t = document.createTextNode("li 4");
+        y.appendChild(t);
+        x.appendChild(y);
+        y.innerHTML = "LI 4";
+        y.className = "li4";
+        y.id = "Li4";
+        // y.textContent="LI 4";both read and write.
+
+    </script>
+</body>
+
+</html>

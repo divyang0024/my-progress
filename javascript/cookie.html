@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        document.cookie = "item=bread;expires=Sat, 3 Sept 2022 12:00:00 UTC";
+        // we can even specify path,domain and sp on.
+        localStorage.setItem("et", "te");
+        console.log(localStorage.getItem("et"));
+        let fun1 = () => localStorage.removeItem("et");
+        setTimeout(fun1, 5000);
+        // same syntax for session storage.
+    </script>
+</body>
+
+</html>

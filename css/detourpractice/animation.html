@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            height: 500px;
+            width:500px;
+            background-color: crimson;
+            border: 5px solid black;
+            position: relative;
+            animation-name: box-animation;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            padding:0%;
+            margin:auto;
+            animation-name: arrow-rotate;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes box-animation {
+            0% {
+                width: 500px;
+
+            }
+
+            100% {
+                width: 1000px;
+            }
+        }
+
+        @keyframes arrow-rotate {
+            0% {
+                transform:rotate(180deg);
+
+            }
+
+            100% {
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="/images/arrow.png" alt="">
+    </div>
+</body>
+
+</html>

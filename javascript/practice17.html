@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ol id="parent">
+        <li id="child1">first child</li>
+        <li id="child2"></li>
+        <li id="child3">third child</li>
+        <li id="child4"></li>
+        <li id="child5">last child</li>
+    </ol>
+    <script>
+        let ps = document.getElementById("parent");
+        let fc = ps.firstElementChild;
+        console.log(fc.innerHTML);
+        let lc = ps.lastElementChild;
+        console.log(lc.innerHTML);
+        let tc = lc.previousElementSibling.previousElementSibling;
+        console.log(tc.innerHTML);
+        let li_list = ps.children;
+        console.log(li_list);
+        let pc = fc.parentElement;
+        console.log(pc);
+        lc.innerHTML = "<h1>last child</h1>"
+    </script>
+</body>
+
+</html>

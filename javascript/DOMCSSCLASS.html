@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1 class="">this is a program to demonstrate DOM css class.</h1>
+    <script>
+        let cs = "x"
+        // document.body.firstElementChild.className;
+        // document.body.firstElementChild.className += cs;
+        let cs1 = " y z";
+        document.body.firstElementChild.className = document.body.firstElementChild.className.concat(cs, cs1);
+        let list = document.body.firstElementChild.classList;
+        for (let x of list) {
+            console.log("of" + x);
+        }
+        // for (let x in list) {
+        //     console.log("in" + x + list[x]);
+        // }
+        document.body.firstElementChild.classList.add("a");
+        document.body.firstElementChild.classList.remove("x");
+        document.body.firstElementChild.classList.replace("a", "b");
+        document.body.firstElementChild.classList.toggle("x");
+        console.log(document.body.firstElementChild.classList.contains("x"));
+        //toggle adds up the name if it does not resides otherwise removes it.
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul id="div1">
+        <li class="li1">li1</li>
+        <li class="li2">li2</li>
+        <li class="li3">li3</li>
+        <li class="li4">li4</li>
+        <li class="li5">li5</li>
+    </ul>
+    <ul id="div2">
+        <li class="li1">li1</li>
+        <li class="li2">li2</li>
+        <li class="li3">li3</li>
+        <li class="li4">li4</li>
+        <li class="li5">li5</li>
+    </ul>
+    <script>
+        $(document).ready(function () {
+            $("#div1 li").first().css("background-color", "crimson");//any type of specificity will work.
+            $("#div1 li").last().css("background-color", "cornflowerblue");//any type of specificity will work.
+            $("#div1 li").eq(2).css("border", "2px solid crimson");
+            $("li").filter(".li2").css("border", "2px solid cornflowerblue");//index as argument.
+            $("#div2 li").not(".li4").css("background-color", "cornsilk");
+            $("#div1 li").slice(1, 4).css("background-color", "chartreuse");//select index,one argument is also acceptable but it will choose every single element of same type hich comes after it.
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        area:hover {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- in order to use image map we use an attribute which is called as "usemap" and we have to assign a value preceded by a "#" -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Q-UOukORsSfw-pfTGuy_j1Te9FB1pChmvg&usqp=CAU"
+        alt="" usemap="#findcoords" width="275px" height="183px">
+    <!-- then we have to assign the value of usemap attribute without the # symbol in form of name attribute in map tag. -->
+    <map name="findcoords">
+        <area shape="rect" coords="33,71,78,26" target="_blank" title="square"
+            href="https://en.wikipedia.org/wiki/Square" alt="">
+        <!-- while assigning coordinates of rectangle always go for bottom left corner and top right corner coordinates. -->
+        <area shape="circle" title="circle" coords="138,49,24" href="https://en.wikipedia.org/wiki/Circle"
+            target="_blank" alt="">
+        <!-- in the case of circle first locate the center of a circle and then radius. -->
+        <area shape="poly" title="triangle" target="_blank" coords="183,72,213,20,245,72"
+            href="https://en.wikipedia.org/wiki/Triangle" alt="">
+        <!-- locate all the edges of the an object. -->
+    </map>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<h1>this is a program to to demonstrate how traverse element through parent and child element</h1>
+<ol id="ol1">
+    <li class="li"></li>
+    <li></li>
+    <li></li>
+</ol>
+<ol id="ol2">
+    <li class="li">1</li>
+    <li>2</li>
+    <li>3</li>
+</ol>
+<script>
+    let x = document.getElementById("ol1");
+    let xl = x.firstElementChild;
+    console.log(xl);
+    let xl1 = xl.nextElementSibling;
+    console.log(xl.nextElementSibling);
+    console.log(xl1.previousElementSibling);
+    let z = document.getElementById("ol2");
+    let y = z.querySelector(".li");
+    console.log(y);
+    let yl = y.parentElement;
+    console.log(yl);
+    let y2 = yl.children;
+    console.log(y2);
+    console.log(y2[0].innerHTML);
+    console.log(y2[1].innerHTML);
+    console.log(y2[2].innerHTML);
+</script>
+
+<body>
+
+</body>
+
+</html>

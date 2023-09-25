@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate object prototype and nested obj</h1>
+    <script>
+        function Students(name, age, section, house_no, postal_code) {
+            this.name = name;
+            this.age = age;
+            this.section = section;
+            this.house_no = house_no;
+            this.postal_code = postal_code;
+            this.COnCAt = function () {
+                alert(`${this.name} ${this.age} ${this.section} ${this.house_no} ${this.postal_code} `);
+            };
+        }
+        // function fun1() {
+        //     alert("!!!!");
+        // };
+        // console.log(fun1);
+        let arr = new Array();
+        for (let i = 0; i <= 0; i++) {
+            alert(`student ${i + 1} id!!!!`);
+            let name = prompt("enter your name : ");
+            let age = Number(prompt("enter your age : "));
+            let section = prompt("enter your section : ");
+            let house_no = Number(prompt("enter house number : "));
+            let postal_code = Number(prompt("enter postal code : "));
+            arr[i] = new Students(name, age, section, house_no, postal_code);
+        }
+        display = function () {
+            for (let i = 0; i <= 0; i++) {
+                for (let key in arr[i]) {
+                    if (key != "COnCAt")
+                        document.write(`${key} : ${((arr[i])[key])} <br/>`);
+                }
+            }
+        }
+        display();
+        arr[0].COnCAt();
+    </script>
+</body>
+
+</html>

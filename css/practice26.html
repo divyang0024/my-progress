@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            height: 40vh;
+            width: 70vw;
+            background-color: crimson;
+            transition-property: width, background-color;
+            transition-duration: 1000ms;
+            /* transition-timing-function: steps(90,start); */
+            transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+            transition-delay: 500ms;
+            /* shorthand for transition is transition property:
+            transition: property1,property2,duratin,...... */
+        }
+
+        div:hover {
+            background-color: deeppink;
+            width: 30vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

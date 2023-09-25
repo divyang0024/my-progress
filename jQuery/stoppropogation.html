@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="parent" style="border:2px solid black;background-color:cornflowerblue;padding:20px;">
+        <h1>this is a heading.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repellat minima nobis autem facilis ea
+            minus
+            sapiente molestias. Fugiat consequatur unde mollitia expedita, ad minima ratione eum iste error corporis
+            quaerat
+            itaque vitae quod nemo repellat eaque facere culpa harum eligendi ipsum rerum dicta dolorum quasi illo?
+            Vero,
+            aspernatur nulla?</p>
+        <button>click me</button>
+    </div>
+    <script>
+        $(function () {
+            $("h1").click(function (e) { alert("h1 is clicked!!!!, stop propgation is " + e.isPropagationStopped()); });
+            $("p").click(function (e) {
+                e.stopPropagation();
+                alert("p is clicked!!!!, stop propgation is " + e.isPropagationStopped());
+            });
+            $("#parent").click(function (e) {
+                e.stopPropagation();//if child element click is triggered,the event bubbling will still take place as the child element stop propgation is false.
+                alert("div is clicked!!!!, stop propgation is " + e.isPropagationStopped());
+            });
+            $("button").click(function (e) { alert("button is clicked!!!!, stop propgation is " + e.isPropagationStopped()); });
+        });
+    </script>
+</body>
+
+</html>

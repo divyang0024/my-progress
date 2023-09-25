@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate object in javascript.</h1>
+    <script>
+        let obj = {
+            'name': "divyang",
+            age: 20
+        };
+        obj.cllg = "iitm";
+        // document.write('cllg' in obj);//string value
+        // document.write("<br/>");//string value
+        // document.write(obj.name + "<br/>");
+        // document.write(obj.age + "<br/>");
+        // document.write(obj["cllg"] + "<br/>");
+        // obj["name"] = "mundotia";
+        // obj[name] = "mundotia";
+        document.write(obj['name'] + "<br/>");
+        for (let x in obj) {
+            document.write("<br/>" + obj[x] + "<br/>");
+        }
+        console.log(obj);
+        // let p = prompt("Enter the Property:");
+        //     let obj = { Name: "xyz", Age: 34 };
+        //     console.log(obj[p]);
+    </script>
+</body>
+
+</html>

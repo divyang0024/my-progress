@@ -1,0 +1,20 @@
+p::first-letter {
+    color: brown
+}
+
+p::first-line {
+    color: greenyellow;
+}
+
+h1::before {
+    content: url('Images/H.png')
+}
+
+h1::after {
+    content: " 1 ";
+}
+
+p::selection {
+    background-color: grey;
+    color: black;
+}

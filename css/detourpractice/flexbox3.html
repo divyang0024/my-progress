@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            background-color: cornsilk;
+            border: 5px solid black;
+            width: 80vw;
+            height: 70vh;
+            /* padding: 10px; */
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: start;
+            /* it is used to align individual row and column but not the whole content */
+            /* stretch is by default.*/
+            /* it works along the cross axis of row and column. */
+        }
+
+        #child1 {
+            background-color: crimson;
+        }
+
+        #child2 {
+            background-color: cornflowerblue;
+        }
+
+        #child3 {
+            background-color: chartreuse;
+            /* height:200px; */
+        }
+
+        #child4 {
+            background-color: coral;
+        }
+
+
+
+        .box {
+            font-size: 50px;
+            font-weight: bold;
+            color: cornsilk;
+            -webkit-text-stroke: 0.5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child1" class="box">box1</div>
+        <div id="child2" class="box">box2</div>
+        <div id="child3" class="box">box3</div>
+        <div id="child4" class="box">box4</div>
+    </div>
+</body>
+
+</html>

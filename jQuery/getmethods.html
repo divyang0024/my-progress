@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        #blue {
+            color: cornflowerblue
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, <span></span></p>
+    <input type="text" name="" id="en">
+    <script>
+        $(function () {
+            console.log($("p").html());
+            console.log($("p").text());
+            $("#en").change(function () {
+                let text = $(this).val();
+                console.log(text);
+            });
+            $("p").text("<b>hello there</b>, it was really nice to meet you!!!!.");
+            $("p").html("<b>hello there</b>, it was really nice to meet you!!!!.");
+            $("input").val("Divyang Mundotia");
+            $("p").attr("id", "blue");
+        });
+    </script>
+</body>
+
+</html>

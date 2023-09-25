@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            height: 200px;
+            width: 50vw;
+            border: 2px solid black;
+            display: flex;
+            flex-flow: row wrap;
+            padding: 10px;
+        }
+
+        .children {
+            border: 2px solid black;
+            font-size: 50px;
+            text-align: center;
+            width: 200px;
+            flex-shrink: 1;
+        }
+
+        #div2 {
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- use to give space between grid cells.  -->
+    <!-- works when free space is available.  -->
+    <div id="parent">
+        <div class="children" id="div1">1</div>
+        <div class="children" id="div2">2</div>
+        <div class="children" id="div3">3</div>
+        <div class="children" id="div4">4</div>
+    </div>
+</body>
+
+</html>

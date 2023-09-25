@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            height: 100vh;
+            width: 100%;
+            background-color: darkgrey;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 300px auto 300px;
+            grid-template-rows: repeat(4, auto);
+            grid-gap: 10px 10px;
+            ;
+        }
+
+        .children {
+            box-sizing: border-box;
+            border: 2px solid black;
+            text-align: center;
+            font-size: 100px;
+            word-break: break-all;
+        }
+
+        #child1 {
+            background-color: chartreuse;
+            grid-area: 1/1/2/4;
+        }
+
+        #child2 {
+            background-color: chartreuse;
+            grid-area: 2/1/span 2/2;
+        }
+
+        #child3 {
+            background-color: chartreuse;
+            grid-area: 2/2/span 2/3;
+        }
+
+        #child4 {
+            background-color: chartreuse;
+            grid-area: 2/3/span 2/4;
+        }
+
+        #child5 {
+            background-color: chartreuse;
+            background-color: chartreuse;
+            grid-row: 4/5;
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we can make a grid row or column bigger than usual. -->
+    <!-- we can't overide the effect of another grid if it is postioned. -->
+    <!-- "span" can be used to give number of columns and rows.  -->
+    <div id="parent">
+        <div class="children" id="child1">header</div>
+        <div class="children" id="child2">menu</div>
+        <div class="children" id="child3">content</div>
+        <div class="children" id="child4">home</div>
+        <div class="children" id="child5">footer</div>
+    </div>
+</body>
+
+</html>

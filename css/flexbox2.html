@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            width: 200px;
+            height: 200px;
+            margin: 0px 0px 0px 100px;
+            border: 5px solid black;
+            display: flex;
+            /* flex-direction: column;
+            flex-wrap: wrap-reverse; */
+            flex-flow: row wrap-reverse;
+        }
+
+        .children {
+            margin: 10px;
+            border: 2.5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- in order to avoid overflow we use flex-wrap property.  -->
+    <!-- it contains values like no-wrap,wrap,wrap-reverse. -->
+    <!-- used in container. -->
+    <!-- flex-flow:<flex direction><flex wrap> is basically a shorthand for both flex direction and flex wrap. -->
+    <div id="parent">
+        <div class="children">1</div>
+        <div class="children">2</div>
+        <div class="children">3</div>
+        <div class="children">4</div>
+        <div class="children">5</div>
+        <div class="children">6</div>
+        <div class="children">7</div>
+        <div class="children">8</div>
+        <div class="children">9</div>
+    </div>
+</body>
+
+</html>

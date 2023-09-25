@@ -1,0 +1,15 @@
+#Resizable {
+    height: 20vh;
+    min-height: 10vh;
+    min-width: 40vw;
+    overflow: hidden;
+    border: 1px solid black;
+    resize: both;
+}
+
+/* 
+there are four types of CSS resizable property: 
+1.none:-by default
+2.both:-resizable both vertically and horizontally
+3.horizontal:-resizable only horizontally
+4.vertical:resizble ony vertically*/

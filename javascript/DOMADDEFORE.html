@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+
+    <ul id="ul">
+        <li>li 1</li>
+        <li class="lii2">li 2</li>
+    </ul>
+    <script>
+        let ul1 = document.getElementById("ul");
+        let li3 = document.createElement("li");
+        li3.textContent = "li 3";
+        // let li2 = (ul1.getElementById("lii2")).previousElementSibling;
+        let li2 = ul1.getElementsByClassName("lii2")[0].previousElementSibling;
+        ul1.insertBefore(li3, li2);
+    </script>
+</body>
+
+</html>

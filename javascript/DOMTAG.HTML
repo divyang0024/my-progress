@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate dom get element by tag name.</h1>
+    <h3>can't change the content!!!!.</h3>
+    <h2>can't change the content!!!!.</h2>
+    <div class="div1">
+        <h3>div1 heading1</h3>
+        <h3>div1 heading2</h3>
+    </div>
+    <div class="div2">
+        <h2>div2 heading1</h2>
+        <h2>div2 heading2</h2>
+    </div>
+    <script>
+        let div1 = document.getElementsByClassName("div1");
+        let x = div1[0].getElementsByTagName("h3");//important to put [] in the case of class.
+        let div2 = document.getElementsByClassName("div2");
+        let y = div2[0].getElementsByTagName("h2");
+        console.log(x);
+        for (let i = 0; i <= 1; i++) {
+            x[i].innerHTML = "this is a heading" + i + 1 + " which comes under div1";
+            y[i].innerHTML = "this is a heading" + i + 1 + " which comes under div2";
+        }
+    </script>
+</body>
+
+</html>

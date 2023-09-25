@@ -1,0 +1,15 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "this is a programn to test out npm external package.",
+  "main": "externalpackage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "divyang mundotia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "supervillains": "^3.1.0"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a programn to demonstrate array operation.</h1>
+    <script>
+        let arr = ["red", "green", "blue", "yellow", "orange"];
+        let str = "red green blue";
+        document.write(arr.length + "<br/>");
+        document.write(arr.push("violet") + "<br>"
+        );
+        document.write(arr.unshift("purple") + "<br>"
+        );//left side insertion
+        document.write(arr.pop() + "<br>"
+        );
+        document.write(arr.shift() + "<br>"
+        );//left side deletion
+        document.write(arr + "<br/>");
+        document.write(arr.splice(0, 3) + "<br/>");
+        Array.isArray(arr);//Array is predefined and it has its own predefined function.
+        let str2 = str.split('e');
+        document.write(str2);
+        str2 = arr.join('+');
+        document.write("<br/>" + str2 + "<br/>");
+        let array2d = [[12, 21], [23, 32]];
+        document.write(array2d[0][1]);
+        arr.forEach(fun1);
+        function fun1(value) {
+            document.write(value);
+        }
+        let arr2 = ["23", 23];
+        arr2.forEach(fun2);
+        function fun2(value) {
+            document.write(value);
+        }
+    </script>
+</body>
+
+</html>

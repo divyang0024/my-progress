@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button id="b1" onclick="fun1()">submit</button>
+    <!-- this is one way of doing DOM event but the event can't be removed. -->
+
+    <script>
+        function fun1() {
+            alert("button is clicked!!!!.");
+        }
+        let btn = document.getElementById("b1");
+        function mo() {
+            console.log("mouseover event called!!!!.");
+        }
+        btn.addEventListener("mouseover", mo);
+        btn.addEventListener("mouseout", function () {
+            console.log("mouseout event called!!!!.");
+        });
+        btn.removeEventListener("mouseover", mo);
+    </script>
+</body>
+
+</html>

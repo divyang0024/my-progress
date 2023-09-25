@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button id="btn1">button 1
+        <button id="btn2">button 2
+            <button id="btn3">button3
+            </button>
+        </button>
+    </button>
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let btn3 = document.getElementById("btn3");
+        let body = document.body;
+        function fb1() { console.log("button 1 is clicked"); }
+        function fb2() { console.log("button 2 is clicked"); }
+        function fb3(stop) {
+            console.log("button 3 is clicked");
+            stop.stopPropagation();
+        }
+        function fbody() {
+            console.log("body is clicked!!!!.");
+        }
+        btn1.addEventListener("click", fb1);
+        btn2.addEventListener("click", fb2);
+        btn3.addEventListener("click", fb3);
+        body.addEventListener("click", fbody);//in the case of btn3 the stop propogation function will still not work since event capture is enabled in body.
+    </script>
+</body>
+
+</html>

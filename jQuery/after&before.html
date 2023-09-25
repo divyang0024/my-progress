@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>this is a heading</h1>
+    <button id="after">insert after</button>
+    <button id="before">insert before</button>
+    <script>
+        $(function () {
+            let heading = $("h1");
+            $("#after").click(function () {
+                heading.after("<p>added after!!!!</p>");
+            });
+            $("#before").click(function () {
+                heading.before("<p>added before!!!!</p>");
+            });
+        });
+    </script>
+</body>
+
+</html>

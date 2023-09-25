@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Letters</title>
+</head>
+
+<body>
+    <% if(locals.l){%>
+        <%- `<h1>your name is ${l} character big.</h1>` %>
+            <%}else {%>
+                <%- "<h1>enter your name below : </h1>" %>
+                    <%}%>
+                        <form action="/submit" method="POST">
+                            <input type="text" name="fName" placeholder="First name">
+                            <input type="text" name="lName" placeholder="Last name">
+                            <input type="submit" value="OK">
+                        </form>
+
+                        <%locals.l=0%>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <%if(locals.name&&locals.ability&&locals.image){%>
+        <div id="main">
+
+            <ul>
+                <li id="child1">
+                    <img src="<%=locals.image%>" alt="<%=locals.name%>">
+                </li>
+                <li id="child2">
+                    Pokemon : <%=locals.name%>
+                </li><br>
+                <li id="child3">
+                    Ability : <%=locals.ability%>
+                </li>
+            </ul>
+        </div>
+        <%}%>
+</body>
+
+</html>

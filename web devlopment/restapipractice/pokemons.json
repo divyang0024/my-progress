@@ -1,0 +1,353 @@
+[
+    {
+        "name": "Pikachu",
+        "type": [
+            "Electric"
+        ],
+        "abilities": [
+            "Static",
+            "Lightning Rod"
+        ],
+        "base_stats": {
+            "HP": 35,
+            "Attack": 55,
+            "Defense": 40,
+            "Special Attack": 50,
+            "Special Defense": 50,
+            "Speed": 90
+        }
+    },
+    {
+        "name": "Charizard",
+        "type": [
+            "Fire",
+            "Flying"
+        ],
+        "abilities": [
+            "Blaze",
+            "Solar Power"
+        ],
+        "base_stats": {
+            "HP": 78,
+            "Attack": 84,
+            "Defense": 78,
+            "Special Attack": 109,
+            "Special Defense": 85,
+            "Speed": 100
+        }
+    },
+    {
+        "name": "Bulbasaur",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "abilities": [
+            "Overgrow",
+            "Chlorophyll"
+        ],
+        "base_stats": {
+            "HP": 45,
+            "Attack": 49,
+            "Defense": 49,
+            "Special Attack": 65,
+            "Special Defense": 65,
+            "Speed": 45
+        }
+    },
+    {
+        "name": "Squirtle",
+        "type": [
+            "Water"
+        ],
+        "abilities": [
+            "Torrent",
+            "Rain Dish"
+        ],
+        "base_stats": {
+            "HP": 44,
+            "Attack": 48,
+            "Defense": 65,
+            "Special Attack": 50,
+            "Special Defense": 64,
+            "Speed": 43
+        }
+    },
+    {
+        "name": "Jigglypuff",
+        "type": [
+            "Normal",
+            "Fairy"
+        ],
+        "abilities": [
+            "Cute Charm",
+            "Competitive"
+        ],
+        "base_stats": {
+            "HP": 115,
+            "Attack": 45,
+            "Defense": 20,
+            "Special Attack": 45,
+            "Special Defense": 25,
+            "Speed": 20
+        }
+    },
+    {
+        "name": "Mewtwo",
+        "type": [
+            "Psychic"
+        ],
+        "abilities": [
+            "Pressure",
+            "Unnerve"
+        ],
+        "base_stats": {
+            "HP": 106,
+            "Attack": 110,
+            "Defense": 90,
+            "Special Attack": 154,
+            "Special Defense": 90,
+            "Speed": 130
+        }
+    },
+    {
+        "name": "Eevee",
+        "type": [
+            "Normal"
+        ],
+        "abilities": [
+            "Run Away",
+            "Adaptability"
+        ],
+        "base_stats": {
+            "HP": 55,
+            "Attack": 55,
+            "Defense": 50,
+            "Special Attack": 45,
+            "Special Defense": 65,
+            "Speed": 55
+        }
+    },
+    {
+        "name": "Gengar",
+        "type": [
+            "Ghost",
+            "Poison"
+        ],
+        "abilities": [
+            "Cursed Body",
+            "Levitate"
+        ],
+        "base_stats": {
+            "HP": 60,
+            "Attack": 65,
+            "Defense": 60,
+            "Special Attack": 130,
+            "Special Defense": 75,
+            "Speed": 110
+        }
+    },
+    {
+        "name": "Snorlax",
+        "type": [
+            "Normal"
+        ],
+        "abilities": [
+            "Immunity",
+            "Thick Fat"
+        ],
+        "base_stats": {
+            "HP": 160,
+            "Attack": 110,
+            "Defense": 65,
+            "Special Attack": 65,
+            "Special Defense": 110,
+            "Speed": 30
+        }
+    },
+    {
+        "name": "Machamp",
+        "type": [
+            "Fighting"
+        ],
+        "abilities": [
+            "Guts",
+            "No Guard"
+        ],
+        "base_stats": {
+            "HP": 90,
+            "Attack": 130,
+            "Defense": 80,
+            "Special Attack": 65,
+            "Special Defense": 85,
+            "Speed": 55
+        }
+    },
+    {
+        "name": "Lapras",
+        "type": [
+            "Water",
+            "Ice"
+        ],
+        "abilities": [
+            "Water Absorb",
+            "Shell Armor"
+        ],
+        "base_stats": {
+            "HP": 130,
+            "Attack": 85,
+            "Defense": 80,
+            "Special Attack": 85,
+            "Special Defense": 95,
+            "Speed": 60
+        }
+    },
+    {
+        "name": "Dragonite",
+        "type": [
+            "Dragon",
+            "Flying"
+        ],
+        "abilities": [
+            "Inner Focus",
+            "Multiscale"
+        ],
+        "base_stats": {
+            "HP": 91,
+            "Attack": 134,
+            "Defense": 95,
+            "Special Attack": 100,
+            "Special Defense": 100,
+            "Speed": 80
+        }
+    },
+    {
+        "name": "Machop",
+        "type": [
+            "Fighting"
+        ],
+        "abilities": [
+            "Guts",
+            "No Guard"
+        ],
+        "base_stats": {
+            "HP": 70,
+            "Attack": 80,
+            "Defense": 50,
+            "Special Attack": 35,
+            "Special Defense": 35,
+            "Speed": 35
+        }
+    },
+    {
+        "name": "Gyarados",
+        "type": [
+            "Water",
+            "Flying"
+        ],
+        "abilities": [
+            "Intimidate",
+            "Moxie"
+        ],
+        "base_stats": {
+            "HP": 95,
+            "Attack": 125,
+            "Defense": 79,
+            "Special Attack": 60,
+            "Special Defense": 100,
+            "Speed": 81
+        }
+    },
+    {
+        "name": "Venusaur",
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "abilities": [
+            "Overgrow",
+            "Chlorophyll"
+        ],
+        "base_stats": {
+            "HP": 80,
+            "Attack": 82,
+            "Defense": 83,
+            "Special Attack": 100,
+            "Special Defense": 100,
+            "Speed": 80
+        }
+    },
+    {
+        "name": "Pidgey",
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "abilities": [
+            "Keen Eye",
+            "Tangled Feet"
+        ],
+        "base_stats": {
+            "HP": 40,
+            "Attack": 45,
+            "Defense": 40,
+            "Special Attack": 35,
+            "Special Defense": 35,
+            "Speed": 56
+        }
+    },
+    {
+        "name": "Mew",
+        "type": [
+            "Psychic"
+        ],
+        "abilities": [
+            "Synchronize"
+        ],
+        "base_stats": {
+            "HP": 100,
+            "Attack": 100,
+            "Defense": 100,
+            "Special Attack": 100,
+            "Special Defense": 100,
+            "Speed": 100
+        }
+    },
+    {
+        "name": "Alakazam",
+        "type": [
+            "Psychic"
+        ],
+        "abilities": [
+            "Synchronize",
+            "Inner Focus"
+        ],
+        "base_stats": {
+            "HP": 55,
+            "Attack": 50,
+            "Defense": 45,
+            "Special Attack": 135,
+            "Special Defense": 95,
+            "Speed": 120
+        }
+    },
+    {
+        "name": "Lugia",
+        "type": [
+            "Psychic",
+            "Flying"
+        ],
+        "abilities": [
+            "Pressure",
+            "Multiscale"
+        ],
+        "base_stats": {
+            "HP": 106,
+            "Attack": 90,
+            "Defense": 130,
+            "Special Attack": 90,
+            "Special Defense": 154,
+            "Speed": 110
+        }
+    }
+]

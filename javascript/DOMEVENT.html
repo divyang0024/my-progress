@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate DOM events.</h1>
+    <button id="btn1" onclick="fun1()">button 1</button><br><br>
+    <button id="btn2">button 2</button><br><br>
+    <button id="btn3">button 3</button><br><br>
+    <button id="btn4">button 4</button>
+    <button id="btn5">button 5</button>
+    <script>
+        function fun1() { alert("function 1 has been invoked!!!!."); }
+        let function2 = function () { alert("function 2 has been invoked!!!!."); }
+        let function3 = function fun3() { alert("function 3 has been invoked!!!!."); }
+        document.getElementById("btn2").addEventListener("click", function2);
+        document.getElementById("btn3").addEventListener("click", function3);
+        document.getElementById("btn4").addEventListener("click", function () {
+            alert("function 4 has been invoked!!!!.");
+        });
+        document.getElementById("btn5").addEventListener("mouseover", function () {
+            console.log("mouse enter!!!!.");
+        });
+        document.getElementById("btn5").addEventListener("mouseout", function () {
+            console.log("mouse exit!!!!.")
+        });
+    </script>
+</body>
+
+</html>

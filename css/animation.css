@@ -1,0 +1,53 @@
+@keyframes animate {
+    0% {
+        /* background-color: red; */
+        transform: rotate(0deg);
+        transform: translate(0px, 0px);
+        background-image: linear-gradient(to left,black, white);
+    }
+
+    25% {
+        /* background-color: green; */
+        transform: rotate(90deg);
+        transform: translate(100px, 0px);
+        background-image: linear-gradient(to top, black, white);
+    }
+
+    50% {
+        /* background-color: blue; */
+        transform: rotate(180deg);
+        transform: translate(100px, 100px);
+        background-image: linear-gradient(to right,black, white);
+    }
+
+    75% {
+        /* background-color: violet; */
+        transform: rotate(270deg);
+        transform: translate(-100px, 100px);
+        background-image: linear-gradient(to bottom, black, white);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        transform: translate(-100px, 0px);
+        background-image: linear-gradient(to left, black, white);
+    }
+}
+
+#div1 {
+    height: 10px;
+    width: 100px;
+    background-color: cadetblue;
+    animation-name: animate;
+    animation-duration: 5s;
+    position: relative;
+    border-radius: 5px inset black;
+    top:100px;
+    left:500px;
+    /* animation delay:same as transition delay */
+    /* animation-timing-function:same as transition-timing-function */
+    animation-iteration-count: infinite;
+    /*or any integer value without unit*/
+    /* animation-direction: reverse; */
+    /*alternate-revrese:first same then reverse,alternate:same when first time then changes*/
+}

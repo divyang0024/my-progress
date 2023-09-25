@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate DOM attribute</h1>
+    <script>
+        let img1 = document.createElement("img");
+        img1.src = "https://i.pinimg.com/236x/07/c7/b9/07c7b969dbbdcd1a081a700922122faf.jpg";
+        document.body.appendChild(img1);
+        img1.setAttribute("width", "50%");
+        console.log(img1.getAttribute("width"));
+        img1.setAttribute("alt", "colorful leafs");
+        console.log(img1.hasAttribute("height"));
+        img1.removeAttribute("alt");//"alt" attribute has been removed.
+    </script>
+</body>
+
+</html>

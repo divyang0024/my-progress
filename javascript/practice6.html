@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button id="btn" onclick="fun1()">button 1</button>
+    <script>
+        function fun1() {
+            console.log("function 1 is invoked!!!!.")
+        }
+        function fun2() {
+            console.log("function 2 is invoked!!!!.")
+        }
+        document.getElementById("btn").addEventListener("click", fun1);
+        document.getElementById("btn").removeEventListener("click", fun1);
+    </script>
+</body>
+
+</html>

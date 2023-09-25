@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: coral;
+            transition-property: height, width, border-radius, border;
+            resize: both;
+            /* specify the property before applying transition,we have to specify poperty because if we dont the transition will be jitterish.*/
+            transition-duration: 500ms, 500ms, 500ms, 500ms;
+            /* it is the time period till which the the transition takes place. */
+            transition-timing-function:step-end;
+            /* transition: property duration timing-function delay; */
+        }
+
+        div:hover {
+            height: 500px;
+            width: 500px;
+            border: 10px solid black;
+            border-radius: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

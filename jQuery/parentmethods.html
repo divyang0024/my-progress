@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            border: 2px solid black;
+        }
+
+        #p1 {
+            height: 500px;
+        }
+
+        #p2 {
+            height: 100px;
+        }
+
+        #p3 {
+            height: 100px;
+        }
+
+        #p4 {
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="p1" class="box">
+        <ul id="p2" class="box" style="position:relative">
+            <div id="p3" class="box">
+                <div id="p4" class="box"></div>
+            </div>
+        </ul>
+    </div>
+    <script>
+        $(function () {
+            // $("#p4").parent().css("background-color", "crimson");
+            // $("#p4").parents("#p2").css("background-color", "crimson");
+            // $("#p4").parentsUntil("#p2").css("background-color", "crimson");
+            // $("#p4").offsetParent().css("background-color", "crimson");works only if a parent has "position" property.
+            $("#p4").closest("ul").css("background-color", "crimson");//it takes the element as point of reference.
+        });
+    </script>
+</body>
+
+</html>

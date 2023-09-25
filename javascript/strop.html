@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>this is programn which tells about predefiened String funtion.</h1>
+    <script>
+        let name = " my name is divyang mundotia ,it was really nice to meet you. ";
+        let name1 = " my name is divyang mundotia ,it was really nice to meet you. ";
+        //In order to put special character inside of string we use '\'.
+        document.write(`use of backslash escape : \" ${name}`);
+        //In order to know the length of string we use length()
+        document.write("<br/>" + name.length);
+        //In order to access a particular word index
+        document.write("<br/>" + name[2]);
+        document.write("<br/>" + name.concat(name1, name1));
+        document.write("<br/>" + name.slice(12, 19));
+        document.write("<br/>" + name.substr(12, 19));
+        document.write("<br/>" + name.lastIndexOf("a"));
+        document.write("<br/>" + name.indexOf("a"));
+        document.write("<br/>" + name.search("divyang"));
+        let name3 = name.replace("nice", "pleasent");
+        document.write(`<br/> ${name3}`);
+        document.write("<br/>" + name.trim());
+        document.write("<br/>" + name.trimStart());
+        document.write("<br/>" + name.trimEnd());
+        document.write("<br/>" + name.includes("divyang"));
+    </script>
+</body>
+
+</html>

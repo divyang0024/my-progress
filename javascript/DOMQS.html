@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonsatrate query selector.</h1>
+    <ol class="ol1">
+        <li class="li1">this is li1</li>
+        <li class="li2">thus is li2</li>
+    </ol>
+    <script>
+        let x = document.querySelector("ol.ol1 li.li1");
+        console.log(x.innerHTML = "li");
+        let y = document.querySelectorAll(".ol1 li");
+        y[0].innerHTML="hello";
+        y[1].innerHTML="hello";
+    </script>
+</body>
+
+</html>

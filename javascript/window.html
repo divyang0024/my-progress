@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <button id="btn">google</button>
+    <button id="btn1">yahoo</button>
+    <script>
+        let url = "//www.google.com";
+        let f = "height=500px,width=500px";
+        let name = "google";
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function () {
+            window.open(url, name, f);
+        });
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click", function () {
+            window.open("//www.yahoo.com", "google");
+        });
+        console.log(window.innerHeight);
+        console.log(window.innerWidth);
+        console.log("paddind,margin and border are included" + btn.offsetHeight);
+        console.log("paddind,margin and border are included" + btn.offsetWidth);
+        console.log("padding is included but not margin and border." + btn.clientHeight);
+        console.log("padding is included but not margin and border." + btn.clientWidth);
+    </script>
+</body>
+
+</html>

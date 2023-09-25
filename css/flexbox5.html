@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            height: 500px;
+            width: 50vw;
+            padding: 10px;
+            margin: 100px 0px 0px 100px;
+            border: 5px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .children {
+            border: 2.5px solid black;
+            margin: 10px;
+            font-size: 50px;
+            flex-grow: 1;
+            flex-basis: 100px;
+        }
+
+        #div3 {}
+
+        #div1 {
+            flex-shrink: 5;
+            align-self: center;
+        }
+
+        #div2 {}
+
+        #div4 {}
+    </style>
+</head>
+
+<body>
+    <!-- flex-grow is apllied on flex items -->
+    <!-- flex grow deals with the  width of flex-items. -->
+    <!-- there should be some space left for flex-grow just the same way as justify-content. -->
+    <div id="parent">
+        <div class="children" id="div1">1</div>
+        <div class="children" id="div2">2</div>
+        <div class="children" id="div3">3</div>
+        <div class="children" id="div4">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            width: 500px;
+            resize: horizontal;
+            overflow: hidden;
+            display: flex;
+            flex-flow: row nowrap;
+            border: 5px solid black;
+            height: 200px;
+        }
+
+        .child {
+            flex-grow: 1;
+        }
+
+        #b1 {
+            flex-basis: 100px;
+            flex-shrink: 0;
+            background-color: crimson;
+            display: inherit;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-right: 50px;
+        }
+
+        #b2 {
+            background-color: chartreuse;
+        }
+
+        #b3 {
+            background-color: cornflowerblue;
+        }
+
+        #b4 {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="b1" class="child">
+            <div id="b1" class="child">b1</div>
+            <div id="b2" class="child">b2</div>
+            <div id="b3" class="child">b3</div>
+            <div id="b4" class="child">b4</div>
+        </div>
+        <div id="b2" class="child">
+            <div id="b1" class="child">b1</div>
+            <div id="b2" class="child">b2</div>
+            <div id="b3" class="child">b3</div>
+            <div id="b4" class="child">b4</div>
+        </div>
+        <div id="b3" class="child">
+            <div id="b1" class="child">b1</div>
+            <div id="b2" class="child">b2</div>
+            <div id="b3" class="child">b3</div>
+            <div id="b4" class="child">b4</div>
+        </div>
+        <div id="b4" class="child">
+            <div id="b1" class="child">b1</div>
+            <div id="b2" class="child">b2</div>
+            <div id="b3" class="child">b3</div>
+            <div id="b4" class="child">b4</div>
+        </div>
+    </div>
+</body>
+
+</html>

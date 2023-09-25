@@ -1,0 +1,8 @@
+#wordwrap {
+    height: 600px;
+    width: 200px;
+    border: 1px solid black;
+    word-wrap: break-word;
+    writing-mode: vertical-lr;
+    font-variant: small-caps;
+}

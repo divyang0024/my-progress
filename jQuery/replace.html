@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="box">
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, inventore?</p>
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, inventore?</p>
+    </div>
+    <button id="replacewith">replacewith</button>
+    <button id="replaceall">replaceall</button>
+    <script>
+        $(function () {
+            $("#replacewith").click(function () {
+                $("#box .para").replaceWith("<p>replacewith<p>");//capable of replacing the element as well as the text node inside of it.
+            });
+            $("#replaceall").click(function () {
+                $("<h1>replaceall</h1>").replaceAll(".para");//capable of replacing only the element but not the text node.
+            });
+        });
+    </script>
+</body>
+
+</html>

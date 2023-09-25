@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="box" style="height:100px;width:100px;background-color:cornflowerblue"></div>
+    <button id="animate">animate</button>
+    <button id="stop">stop</button>
+    <script>
+        $(function () {
+            $("#animate").click(function () {
+                $("#box").animate({ width: "200px" }, 2000);
+                $("#box").animate({ height: "200px" }, 2000);
+            });
+            $("#stop").click(function () {
+                $("#box").stop(true, true);//stop(true(stop all animation.),true(take to end point without animation.));
+            });
+        });
+    </script>
+</body>
+
+</html>

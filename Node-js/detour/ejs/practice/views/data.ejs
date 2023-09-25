@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <%if(locals.name||locals.age){%>
+        <h1>your name is <%=locals.name%> and your age <%=locals.age%>
+        </h1>
+        <%} else {%>
+            <h1>No data recieved</h1>
+            <%}%>
+</body>
+
+</html>

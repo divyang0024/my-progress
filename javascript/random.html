@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a progrma to demonstate Maths.random().</h1>
+    <script>
+        randomaizer = {
+            dice1: function () {
+                let Gentd_Rno = Math.floor(Math.random() * (7 - 1) + 1);
+                return Gentd_Rno;
+            },
+            dice2: function () {
+                let Gentd_Rno = Math.floor(Math.random() * (7 - 1) + 1);
+                return Gentd_Rno;
+            }
+        }
+        let roll1 = Number(randomaizer.dice1());
+        let roll2 = Number(randomaizer.dice2());
+        let result = roll1 + roll2;
+        console.log(result);
+        function bet(result) {
+            let PL_bet = parseInt(prompt("place you bet between 2-12 : "));
+            betting(result);
+            function betting(result) {
+                if (PL_bet === result) {
+                    alert("you won the bet!!!!");
+                }
+                else
+                    alert(`better luck next , DICE1 roll was ${roll1} and DICE2 roll was ${roll2} hence the bet was of ${result} and you got ${PL_bet}`);
+            }
+        }
+        bet(result);
+    </script>
+</body>
+
+</html>

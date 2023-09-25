@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poke-info</title>
+</head>
+
+<body>
+    <%if (locals.name&&locals.ability&&locals.image){%>
+        <img src="<%=locals.image%>" alt="">
+        <h1 style="color: crimson;">pokemon name is <span style="color:chartreuse">
+                <%=locals.name%>
+            </span> and it's skill is <span style="color:cornflowerblue">
+                <%=locals.ability%>
+            </span>
+        </h1>
+        <%}else {%>
+            <h1>OOPS,no data has been fetched.</h1>
+            <%}%>
+
+                <a href="/">reload</a>
+</body>
+
+</html>

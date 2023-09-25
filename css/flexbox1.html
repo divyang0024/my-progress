@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #parent {
+            height: 500px;
+            background-color: gray;
+            display: flex;
+            border: 20px solid black;
+            flex-direction: column-reverse;
+        }
+
+        .children {
+            border: 2px solid black;
+            color: black;
+            font-size: 50px;
+        }
+
+        #div1 {
+            background-color: chartreuse;
+        }
+
+        #div2 {
+            background-color: crimson;
+        }
+
+        #div3 {
+            background-color: cornflowerblue;
+        }
+
+        #div4 {
+            background-color: coral;
+        }
+
+        #div5 {
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- in order to implement flexbox we use display:grid. -->
+    <!-- and all the grid cells or grid items works in the the same manner in flexbox the only diffrence is that it is called "flex items". -->
+    <!-- in flexbox we have two keywords, "main axis or x axis" and "cross axis or y axis". -->
+    <!-- flex direction is always used inside of container element. -->
+    <!-- by default is row which goes left to right in horizontal manner. -->
+    <!-- row-reverse makes the flex items start from right to left. -->
+    <!-- flex-column arrange the flex items in vertical manner. -->
+    <!-- column reverse revert the whole effect. -->
+    <div id="parent">
+        <div id="div1" class="children">one </div>
+        <div id="div2" class="children">two</div>
+        <div id="div3" class="children">three</div>
+        <div id="div4" class="children">four</div>
+        <div id="div5" class="children">five</div>
+    </div>
+</body>
+
+</html>

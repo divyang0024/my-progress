@@ -1,0 +1,8 @@
+#Border {
+    border-style: double dashed dotted solid;
+    border-width: 50px;
+    border-color: red green blue yellow;
+    border-radius: 20%;
+    /* border-top-right-radius: 50px ; */
+    /* border: dashed 5px blue; */
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    form {
+      border: 5px solid burlywood;
+      box-shadow: inset;
+      border-radius: 10px;
+      background-color: lightskyblue;
+      max-width: 100%;
+    }
+
+    hr {
+      border: 2px solid burlywood;
+      border-collapse: collapse;
+      background-color: burlywood;
+    }
+
+    select,
+    input,
+    button,
+    textarea {
+      background-color: burlywood;
+    }
+
+    #courses {
+      background-color: burlywood;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- method is used to specify url method,
+    the action tag is used to define action when the form is submitted if not mentioned the data inside the form will not go anywhere,
+target can also be specified-->
+  <form method="get" action="h.html" autocomplete="on" novalidate>
+    <hr>
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">fname:</label>
+      <input name="firstname" value="divyang" type="text" id="fname"><br><br>
+      <label for="lname">lname:</label>
+      <input name="lastname" value="mundotia" type="text" id="lname"><br><br>
+      <label for="email">email:</label>
+      <input type="email" id="email" name="mailaddress"><br><br>
+      <label for="hobbies">hobby:</label>
+      <input type="text" id="hobbies" name="myhobbies"><br><br>
+      <label for="address">address:</label>
+      <input type="text" id="address" name="myaddress"><br><br>
+      <label for="college">choose your college:</label>
+      <br>
+      <input list="college">
+      <datalist id="college" name="mycollege">
+        <option value="iitm">innovation in information and management technology</option>
+        <option value="msc">maharaja surajmal</option>
+        <option value="bvp">bharti vidya peeth</option>
+        <option value="mac">maharaja agrasen</option>
+        <option value="vips">vivekanda institute of professional studies</option>
+      </datalist>
+    </fieldset>
+    <fieldset>
+      <legend>course and semester:</legend>
+      <label for="courses">course:</label><br>
+      <select div="courses" id="courses" name="mycourse" size="2" multiple>
+        <option value="bca">bca</option>
+        <option value="bba">bba</option>
+        <option value="btech">btech</option>
+        <option value="bjmc">bjmc</option>
+      </select><br>
+      <label for="sem">semester:</label><br>
+      <select div="sem" id="sem" name="mysemester" size="4">
+        <option value="i">i</option>
+        <option value="ii">ii</option>
+        <option value="iii">iii</option>
+        <option value="iv">iv</option>
+        <option value="v">v</option>
+        <option value="vi">vi</option>
+        <option value="vii">vii</option>
+        <option value="viii">viii</option>
+      </select><br>
+    </fieldset>
+    <fieldset>
+      <legend>description</legend>
+      <label for="aboutyou">bio:</label><br>
+      <textarea id="aboutyou" name="mybio" rows="10" cols="10"></textarea>
+    </fieldset>
+    <hr>
+    <p>choose your gender: </p>
+    <input type="radio" name="gender_s" id="male">
+    <label for="male">MALE</label><br>
+    <input type="radio" name="gender_s" id="female">
+    <label for="female">FEMALE</label><br>
+    <input type="radio" name="gender_s" id="others">
+    <label for="others">OTHERS</label><br>
+    <hr>
+    <button type="submit">Submit</button><br>
+    <hr>
+  </form>
+</body>
+
+</html>

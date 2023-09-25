@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        let str = "divyangmundotia";
+        let str1 = " divyang mundotia ";
+        let str3 = " d m ";
+        /*slice(start, end)
+        substring(start, end)
+        substr(start, length)*/
+        document.write(str.slice(0, 7));
+        document.write("<br>");
+        document.write(str.substring(0, 7));
+        document.write("<br>");
+        document.write(str.substr(0, 7));
+        document.write("<br>");
+        let str2 = str.replace("divyangmuntdotia", "divyang mundotia")
+        document.write(str2);
+        document.write("<br>" + str2.toUpperCase());
+        document.write("<br>" + str2.toLowerCase());
+        document.write(`<br>${str.concat("+", str2, "+", str3)}`);
+        document.write(`<br>${str1.length}`);
+        document.write(`<br>${str1.trim().length}`);
+        document.write(`<br>${str1.trimStart().length}`);
+        document.write(`<br>${str1.trimEnd().length}`);
+        let PH_no = "7701970120";
+        document.write(`<br> ${PH_no.padStart(15, "x")}`);
+        document.write(`<br> ${PH_no.padEnd(15, "#")}`);
+        document.write("<br>" + str3.indexOf("m"));
+        document.write("<br>" + str1.lastIndexOf("m"));
+        document.write("<br>" + str3.startsWith("m"));
+        document.write("<br>" + str1.endsWith("m"));
+        document.write("<br>" + str1.includes("mundotia"));
+
+    </script>
+</body>
+
+</html>

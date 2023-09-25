@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #root {
+            height: 500px;
+            width: 500px;
+            padding: 10px;
+            display: grid;
+            background-color: red;
+            border: 2px solid black;
+            grid-template-columns: 1fr;
+        }
+
+        #d1 {
+            padding: 10px;
+            display: inherit;
+            grid-template-columns: 1fr;
+            background-color: green;
+        }
+
+        #d2 {
+            display: inherit;
+            grid-template-columns: 1fr;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we can make grid cells inside of another grid cell. -->
+</body>
+<div id="root">
+    <div id="d1">
+        <div id="d2"></div>
+    </div>
+</div>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate DOM adjacent insert element.</h1>
+    <ul id="ul1">
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ul>
+    <script>
+        let p1 = "<p>this is beforebegin</p>";
+        let p2 = "<p>this is afterbegin</p>";
+        let p3 = "<p>this is beforeend</p>";
+        let p4 = "<p>this is afterend</p>";
+        let ul1 = document.getElementById("ul1");
+        ul1.insertAdjacentHTML("beforebegin", p1);
+        ul1.insertAdjacentHTML("afterbegin", p2);
+        ul1.insertAdjacentHTML("beforeend", p3);
+        ul1.insertAdjacentHTML("afterend", p4);
+    </script>
+</body>
+
+</html>

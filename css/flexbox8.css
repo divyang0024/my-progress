@@ -1,0 +1,56 @@
+@font-face {
+    font-family: sg;
+    src: url('Fonts/Game Of Squids.ttf');
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:monospace;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    background-color: black;
+}
+
+#header {
+    /* background-color: #2196f3;; */
+    background-image: linear-gradient(to bottom,rgb(43, 77, 84) 10%,#2196f3 90%);
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    /*by default ul takes some margin and padding*/
+    padding: 0px;
+    /*by default ul takes some margin and padding*/
+}
+
+header a {
+    color: black;
+}
+
+#logo {
+    margin: 0 auto;
+    font-family: sg;
+    font-size:50px;
+}
+
+#menu li {
+    padding: 10px;
+    font-size: 25px;
+}
+
+#social-icon li {
+    padding: 10px;
+    font-size: 25px;
+}

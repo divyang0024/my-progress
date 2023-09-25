@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            height: 2000px;
+            width: 10000px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>this is a program to demonstrate DOM scroll events and wheel events.</h1>
+    <script>
+        window.addEventListener("scroll", function () {
+            console.log("scroll invoked!!!!.");
+            if (window.pageYOffset > 100) {
+                console.log("you have scroll x:1000px and y:1000px!!!!");
+                document.body.style.background = "white";
+            }
+            else {
+                document.body.style.background = "blue";
+            }
+        });
+        window.addEventListener("wheel", function (axis) {
+            if (axis.deltaY < 0 && axis.deltaX > 0) {
+                console.log("scrolling up towards right!!!!");
+            }
+            else {
+                console.log("scrolling down towards left!!!!");
+            }
+        });
+    </script>
+</body>
+
+</html>

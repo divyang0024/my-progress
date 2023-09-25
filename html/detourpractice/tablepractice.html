@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            border: 2px solid;
+            border-collapse: collapse;
+            background-color: crimson;
+        }
+
+        th,
+        td {
+            border: 2px solid coral;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- we use four tags for creating a whole table : -->
+    <!-- table : creates a table. -->
+    <!-- th : makes the heading in form of a column. -->
+    <!-- tr : makes a row but not a heading. -->
+    <!-- td : makes a row and it has to be nested inside of a row. -->
+    <!-- Combing of two or more rows or columns involves use of two types of attributes with respect to column and rows : -->
+    <!-- colspan : combine two or more columns toghter -->
+    <!-- rowspan : combine two or more rows toghter -->
+    <table>
+        <!--caption gives caption to a table which elucidates the purpose of the table. -->
+        <!-- And it is not important to embed only text, we can embed links or even picture inside of th and td. -->
+        <thead>
+            <tr>
+                <th colspan="2">fullname</th>
+                <th>age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ram</td>
+                <td>kumar</td>
+                <td rowspan="2">20</td>
+            </tr>
+            <tr>
+                <td>sham</td>
+                <td>kumar</td>
+            </tr>
+            <tr>
+                <td>dhal</td>
+                <td>sim</td>
+                <td>60</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">
+                    people
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

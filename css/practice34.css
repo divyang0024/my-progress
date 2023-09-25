@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+#parent {
+    border: 5px solid black;
+    /* padding: 5px; */
+    height: 500px;
+    width: 500px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /*justify property will always work in the direction of main-axis.*/
+    /* align property will always work in the direction of cross-axis.*/
+    /* when flex direction set to column the align and justify inverts as justify now align content vertically and align property property works horizontally. */
+    align-items: baseline;
+    /* align-content:flex-end; */
+    /*strecth,bseline,flex-start,flex-end.*/
+
+}
+
+.child {
+    width: 100px;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+
+#b1 {
+    background-color: coral;
+    height: 200px;
+    font-size: 110px;
+}
+
+#b2 {
+    background-color: cornflowerblue
+}
+
+#b3 {
+    background-color: crimson;
+    font-size: 50px;
+}
+
+#b4 {
+    background-color: chartreuse
+}
+
+#b5 {
+    background-color: coral
+}
+
+#b6 {
+    background-color: cornflowerblue
+}
+
+#b7 {
+    background-color: crimson
+}
+
+#b8 {
+    background-color: chartreuse
+}

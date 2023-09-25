@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <h1>this is a program to demonstrate anonymous function.</h1>
+    <script>
+        let count_time = function () {
+            document.write("function is invoked!!!!<br/>")
+        }//executed only once.
+        setTimeout(count_time, 2000);
+        //function call be made by "count_time();"
+        let x = function () {
+            alert("function invoked!!!!");
+        };
+        x();
+        x();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+#one {
+    background-color: red;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    z-index: 3;
+}
+
+#two {
+    background-color: green;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 150px;
+    right: 150px;
+    z-index: 2;/*the priorty can be given in number form and it has no limit which ever layer has a bigger amount in the form z-index property value,that element would me priortized resulting in overlapping of other element*/
+}
+
+#three {
+    background-color: blue;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 300px;
+    right: 300px;
+    z-index: 1;
+}

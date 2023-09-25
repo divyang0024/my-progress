@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ul>
+        <li class="child">li1</li>
+        <li class="child">li2</li>
+        <li class="child">li3</li>
+        <li class="child">li4</li>
+        <li class="child">li5</li>
+    </ul>
+    <script>
+        $(function () {
+            $(".child").each(function () {
+                console.log($(this).html());
+                $(this).html("li");
+            });
+        });
+    </script>
+</body>
+
+</html>

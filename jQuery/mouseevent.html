@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, magnam!</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let a = $("#box");
+            a.click(function () {
+                a.css("background-color", "crimson");
+            });
+            a.dblclick(function () {
+                a.css("background-color", "cornflowerblue");
+            });
+            a.contextmenu(function () {
+                a.css("background-color", "coral");
+            });
+            a.mouseenter(function () {
+                a.css("background-color", "chartreuse");
+            });
+            a.mouseleave(function () {
+                a.css("background-color", "cornsilk");
+            });
+        });
+    </script>
+</body>
+
+</html>

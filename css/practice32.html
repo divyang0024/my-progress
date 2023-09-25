@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #parent {
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: fit-content 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            padding: 10px;
+            grid-gap: 10px;
+        }
+
+        .children {
+            border: 2px solid black;
+            max-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="children">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt perferendis doloribus
+            adipisci! Cum quam dolorum delectus dicta, adipisci deleniti consequatur quis impedit dolore id. Deleniti
+            eligendi incidunt in debitis culpa velit, blanditiis voluptatibus fugiat quidem, soluta assumenda, quaerat
+            facilis voluptates voluptatum omnis id. Tempora aut ab eveniet delectus necessitatibus eum!</div>
+        <div class="children"></div>
+        <div class="children"></div>
+        <div class="children"></div>
+    </div>
+</body>
+
+</html>

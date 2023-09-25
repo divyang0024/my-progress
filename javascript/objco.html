@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate object constructor.</h1>
+    <script>
+        //object constuctor
+        function Students(name, age, section) {
+            this.name = name;
+            this.age = age;
+            this.section = section;
+        }
+        student1 = {
+            name: "ram",
+            age: 20,
+            section: "m1"
+        }
+        console.log(student1);
+        student1 = new Students("RAM", 25, "m2");
+        console.log(student1);
+        student2 = {
+            name: "sham",
+            age: 20,
+            section: "m2"
+        }
+        console.log(student2);
+        var student2 = new Students("SHAM", 25, "m1");
+        console.log(student2);
+    </script>
+</body>
+
+</html>

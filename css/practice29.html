@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+        }
+
+        #parent {
+            height: inherit;
+            width: 100%;
+            display: grid;
+            background-image: url('./Images/pexels-anni-roenkae-2832382.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: fixed;
+            grid-template-columns: repeat(3, [cs]500px[ce]);
+            grid-template-rows: repeat(3, [rs]500px[re]);
+            row-gap: 10px;
+            column-gap: 10px;
+            padding: 10px;
+            overflow: auto;
+            justify-content: space-around
+        }
+
+        .children {
+            border: 2.5px white ridge;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(11, 35, 135, 0.5), rgba(41, 127, 105, 0.5));
+            border-radius: 10px;
+            padding: 5px;
+            color: aliceblue;
+            font-size: 50px;
+        }
+
+        #div1 {
+            grid-area: rs 1/cs 1/re 1/ce 2;
+            align-self: center;
+            justify-self: start;
+        }
+
+        /* #div2 {}
+
+        #div3 {}
+
+        #div4 {}
+
+        #div5 {}
+
+        #div6 {}
+
+        #div7 {}
+
+        #div8 {}
+
+        #div9 {} */
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="children" id="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore</div>
+        <div class="children" id="div2"></div>
+        <div class="children" id="div3"></div>
+        <div class="children" id="div4"></div>
+        <div class="children" id="div5"></div>
+        <div class="children" id="div6"></div>
+        <div class="children" id="div7"></div>
+        <div class="children" id="div8"></div>
+        <div class="children" id="div9"></div>
+    </div>
+</body>
+
+</html>

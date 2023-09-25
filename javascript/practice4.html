@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ul>
+        <li>li 1</li>
+        <li>li 2</li>
+        <li class="li3">li 3</li>
+        <li>li 4</li>
+        <li>li 5</li>
+    </ul>
+    <script>
+        let x = document.getElementsByTagName("ul")[0];
+        console.log(x);
+        let y = document.getElementsByTagName("ul");
+        console.log(y);
+        x.id = "ul1";
+        x.className = "ul";
+        let z = document.getElementById("ul1");
+        console.log(x);
+        let a = document.getElementsByClassName("ul")[0];
+        console.log(a);
+        let b = document.querySelector("ul#ul1 li.li3");
+        console.log(b);
+        let c = document.querySelectorAll("ul#ul1 li.li3");
+        console.log(c);
+        let li6 = document.createElement("li");
+        let text = document.createTextNode("li 6");
+        li6.appendChild(text);
+        x.appendChild(li6);
+        let d = document.body.firstElementChild.firstElementChild.nextElementSibling.parentElement.children;
+        let li3 = d[2].cloneNode(true);
+        ul1.insertBefore(li3, d[2]);
+        ul1.removeChild(d[6]);
+        let li3c = document.createElement("li");
+        li3c.textContent = "changed!!!!";
+        let li3re = d[2];
+        ul1.replaceChild(li3c, d[3]);
+        console.log(d[0].innerHTML);
+        console.log(d[1].innerHTML);
+        console.log(d[2].innerHTML);
+        console.log(d[3].innerHTML);
+        console.log(d[4].innerHTML);
+        console.log(d[5].innerHTML);
+        console.log(d);
+        x.insertAdjacentHTML("beforebegin", "<h1>added</h1>");
+        x.insertAdjacentHTML("afterbegin", "<h1>added</h1>");
+        x.insertAdjacentHTML("beforeend", "<h1>added</h1>");
+        x.insertAdjacentHTML("afterend", "<h1>added</h1>");
+    </script>
+</body>
+
+</html>

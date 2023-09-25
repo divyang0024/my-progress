@@ -1,0 +1,24 @@
+#textoverflow {
+    height: 50vh;
+    width: 80vw;
+    border: 5px solid black;
+    padding: 100px;
+    margin: 20px 30px 40px 100px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border-top-left-radius: 100px;
+    /*only ment for border radius*/
+    background-image: url('Images/Landscape-Color.jpg'), url('Images/pngwing.com.png');
+    /*images will not overflow but text will*/
+    background-size: cover, cover;
+    background-position: 0px 500px, 500px 100px;
+    /* when we go y axis in positive integer value then it will go down
+    when we go y axis in negaive integer value then it will go up
+    if we go x axis in positive integer manner then we will go right
+    and if we go x axis in negative integer value then we go left */
+    background-attachment: fixed, scroll;
+    /*applicable only background images*/
+    text-align: justify;
+    /*can put left,right,center in the form of align values*/
+    direction: ltr;
+}

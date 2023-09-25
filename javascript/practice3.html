@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        function Student(name, age, gender) {
+            this.name = name;
+            this.age = age;
+            this.gender = gender;
+        }
+        let person = {
+            name: "divyang",
+            age: 20,
+            gender: "male",
+            value: 0,
+            writename: function () {
+                alert(`my name is ${this.name}`);
+            },
+            writeage: function age() {
+                alert(`my age is ${this.age}`);
+            },
+            // writegender: (function () { alert(`your gender is ${this.gender = "MALE"}`) })(),
+            display: function (obj) {
+                for (let i in obj) {
+                    if (i != "writename") {
+                        document.write(`your ${i} : ${obj[i]} <br>`);
+                    }
+                    else
+                        break;
+                }
+            },
+            get getvalue() {
+                console.log(this.value);
+            },
+            set setvalue(n) {
+                this.value = n;
+                this.getvalue;
+            }
+        };
+        let x;
+        person.writename();
+        person.writeage();
+        person.display(person);
+        person.setvalue = "10";
+        person.x = (function writegender() { person.gender = "m"; })();
+        console.log(person);
+        person = new Student("DIVYANG", "TWENTY", "MALE");
+        Student.prototype.country = "India";
+        console.log(person);
+    </script>
+</body>
+
+</html>

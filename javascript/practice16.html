@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ol id="ol1">
+        <li id="child1"></li>
+        <li id="child2"></li>
+        <li id="child3"></li>
+    </ol>
+    <ol id="ol2">
+        <li id="child1"></li>
+        <li id="child2"></li>
+        <li id="child3"></li>
+    </ol>
+    <script>
+        let list1 = document.getElementById("ol1");
+        let x = document.querySelector("#ol1 + ol");
+        console.log(x);
+        let y = list1.querySelectorAll("li");
+        console.log(y[0].innerHTML = "list 1 item 1");
+    </script>
+</body>
+
+</html>

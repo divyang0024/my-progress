@@ -1,0 +1,16 @@
+/* priorty is given in this order:
+1.inline css
+2.id selector
+3.class selector
+4.element selector*/
+#impid {
+    border: 5px solid red
+}
+
+.impclass {
+    border: 5px solid green
+}
+
+div {
+    border: 5px solid blue !important
+}

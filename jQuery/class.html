@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <style>
+        #box {
+            border: 2px solid black;
+            height: 100px;
+        }
+
+        .red {
+            background-color: crimson;
+        }
+
+        .blue {
+            background-color: cornflowerblue;
+        }
+
+        .green {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" class="div1"></div>
+    <button id="add">add</button><button id="del">remove</button><button id="toggle">toggle</button>
+    <script>
+        $(document).ready(function () {
+            let box = $("#box");
+            $("#add").click(function () {
+                $("#box").addClass("red");
+            });
+            $("#del").click(function () {
+                $("#box").removeClass("red");
+            });
+            $("#toggle").click(function () {
+                $("#box").toggleClass("green");
+            });
+            console.log($("div").hasClass("div1"));
+        });
+    </script>
+</body>
+
+</html>

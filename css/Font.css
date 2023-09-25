@@ -1,0 +1,20 @@
+@font-face {
+    font-family: squid-game;
+    src: url('Fonts/Game Of Squids.ttf');
+}
+
+h1 {
+    font-family: squid-game;
+    color: rgb(0, 0, 0, 0.2);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    font-size: 20px;
+    height: 45vh;
+    border: 2px solid black;
+    font-variant: small-caps;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ol id="parent">
+        <li id="child1"></li>
+        <li id="child2"></li>
+        <li id="child3"></li>
+        <li id="child4"></li>
+        <li id="child5"></li>
+    </ol>
+</body>
+<script>
+    let li = document.createElement("li");
+    let list = document.body.firstElementChild;
+    let text = document.createTextNode("this is li 6");
+    // li.textContent = "this is li 6";works in the same way as innerHTML.
+    li.appendChild(text);
+    li.id = "child6"
+    list.appendChild(li);
+    console.log(li.innerHTML);
+</script>
+
+</html>

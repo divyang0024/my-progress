@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate Date object.</h1>
+    <script>
+        let x = new Date();
+        //year,month,day,hour,min,sec,mil.
+        let y = new Date(2001, 12, 24, 5, 0, 0, 0);
+        console.log(x);
+        console.log(x.getTime());
+        console.log(x.getFullYear());
+        console.log(x.getMonth());
+        console.log(x.getDay());
+        console.log(x.getHours());
+        console.log(x.getMinutes());
+        console.log(x.getSeconds());
+        console.log(x.getMilliseconds());
+        console.log(x.getMonth(5));
+        console.log(x.setTime(1));
+        console.log(x.setFullYear(1969));
+        // console.log(x.setDay(21));
+        console.log(x.setHours(23));
+        console.log(x.getMinutes(5));
+        console.log(x.getSeconds(43));
+        console.log(x.getMilliseconds(2));
+        console.log(x)
+    </script>
+</body>
+
+</html>

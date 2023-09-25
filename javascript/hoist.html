@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>this is a program to demonstrate hoisting.</h1>
+    <script>
+        // "use strict"
+        let check = Boolean(confirm("do you want to use strict mode in your program."));
+        if (check === true) {
+            console.log(x);
+            let x = 12;//only declaration is hoisted not the intialization.
+        }
+        else {
+            x = 12;
+            console.log(x);
+        }
+    </script>
+</body>
+
+</html>

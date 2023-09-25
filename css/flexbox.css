@@ -1,0 +1,48 @@
+#parent {
+    width: 95vw;
+    background-color: rgb(219, 133, 133);
+    display: flex;
+    flex-direction: row
+        /*can use row,row-reverse,column-reverse*/
+    ;
+    flex-wrap: nowrap
+        /*we can use wrap,wrap-reverse(combination of both-wrap and reverse )*/
+    ;
+    /*flex-flow:flex-direction flex wrap*/
+    justify-content: flex-end
+        /*(aligns horizontaly)center,flex-end*/
+    ;
+    /*align-items:stretch/*flex-start,end,center*/
+    ;
+    align-content: center
+        /*(aligns verticaly)center,flex-end*/
+    ;
+}
+
+.child {
+    background-color: cyan;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#c1 {
+    order: 3;
+    /* flex-grow:1; */
+    flex-shrink: 1;
+}
+
+#c2 {
+    order: 2;
+    /* flex-grow: 1; */
+    /*flex-basis: 50px;/*decides the width*/
+    flex-shrink: 2;
+    /*align-element:center,flex-start,flex-end; individually*/
+}
+
+#c3 {
+    order: 1;
+    /* flex-grow: 5; */
+    flex-shrink: 1;
+}
