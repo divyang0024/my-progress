@@ -21,3 +21,7 @@ for (let index in str) {
 for (let key in object) {
   console.log(key);
 }
+
+arr.forEach((value, index, arr) => {
+  console.log(value, index, arr);
+}); // only works for array.
