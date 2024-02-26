@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <ul class="week">
+        <li>
+            monday
+        </li>
+        <li>
+            tuesday
+        </li>
+        <li>
+            wednesday
+        </li>
+        <li>
+            thrusday
+        </li>
+        <li>
+            friday
+        </li>
+        <li>
+            saturday
+        </li>
+        <li>
+            sunday
+        </li>
+    </ul>
+    <script>
+        let week = document.getElementsByClassName('week')[0];
+        let children = week.children;
+        console.log(children);//return a html collection.
+        for (let i = 0; i < children.length; i++) {
+            children[i].style.color = "red";
+        }//it will work for html collection even if it is not iterable.
+        console.log(week.firstElementChild.textContent);//return first child occurance if it exist itherwise returns null.
+        console.log(week.lastElementChild.textContent);//return last child occurance if it exist itherwise returns null.
+        console.log(week.firstElementChild.nextElementSibling.textContent);//returns next element sibling.
+        console.log(week.lastElementChild.previousElementSibling.textContent);//returns last element sibling.
+        let childNodes = week.childNodes;
+        console.log(childNodes);
+        let month = document.createElement("ul");
+        month.className = "myMonths";
+        console.log(month);
+    </script>
+</body>
+
+</html>
