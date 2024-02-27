@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        p.bg {
+            background-color: cornflowerblue;
+        }
+
+        .fc {
+            color: chartreuse;
+        }
+
+        .border {
+            border: 5px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="temp">this is a paragraph tag.</p>
+    <script>
+        let para = document.getElementsByTagName('p')[0];
+        para.classList.add('bg');//add a new class into the exisiting classlist;
+        para.classList.add('fc');
+        console.log(para.classList.contains('temp'));//return true otherwise false;
+        para.classList.remove("temp");//removes a class form eisting classlist.
+        para
+        para.classList.toggle('border');//toggle add.
+        para.classList.toggle('border');//toggle remove.
+    </script>
+</body>
+
+</html>
