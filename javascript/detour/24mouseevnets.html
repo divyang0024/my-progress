@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex justify-center items-center">
+    <div id="circle"
+        class="h-[500px] w-[500px] border-2 bg-[crimson] border-4 border-black rounded-full transition-all ease-in">
+    </div>
+    <script>
+        //    mouse events
+        let circle = document.getElementById('circle');
+        // click
+        circle.addEventListener('click', (e) => {
+            circle.style.backgroundColor = "chartreuse";
+            setTimeout(() => {
+                circle.style.backgroundColor = "crimson";
+            }, 500);
+        });//a click is counted iff when mouse is pressed and released.
+        // contextmenu
+        circle.addEventListener('contextmenu', () => {
+            circle.style.backgroundColor = "cornflowerblue";
+            setTimeout(() => {
+                circle.style.backgroundColor = "crimson";
+            }, 500)
+        });
+        //dblclick
+        circle.addEventListener('dblclick', () => {
+            circle.style.backgroundColor = "purple";
+            setTimeout(() => {
+                circle.style.backgroundColor = "crimson";
+            }, 500)
+        });
+        //mousedown
+        circle.addEventListener('mousedown', () => {
+            console.log("mouse down event invoked.");
+        });//mouse is pressed but not released.
+        //mouseup
+        circle.addEventListener('mouseup', () => {
+            console.log("mouse up event invoked.");
+        });//mouse is released.
+        //mousenter
+        circle.addEventListener('mouseenter', () => {
+            console.log("mouse enter");
+        });
+        //mouseleave
+        circle.addEventListener('mouseleave', () => {
+            console.log("mouse leave");
+        });
+        //mousemove
+        circle.addEventListener('mousemove', (e) => {
+            console.table([e.clientX, e.clientY]
+            );//relative to client window.
+        });
+    </script>
+</body>
+
+</html>
