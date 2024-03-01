@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- <h1 id="heading" onClick="alert('you have clicked on heading')">this is a heading.</h1>first way. -->
+    <h1 id="heading">this is a heading.</h1>
+    <div id="button1" class="border-2 border-black p-8 bg-[crimson] text-center rounded-full ">button1
+        <div id="button2" class="border-2 border-black p-8 bg-[chartreuse] text-center rounded-full">button2
+            <div id="button3" class="border-2 border-black p-8 bg-[cornflowerblue] text-center rounded-full">button3
+            </div>
+        </div>
+    </div>
+    <a id="google" href="http://www.google.com">Visit Google.</a>
+    <script>
+        let h1 = document.getElementById('heading');
+        let google = document.getElementById('google');
+        // h1.onclick = () => {
+        //     alert("you have clicked on heading.");
+        // second way}
+
+        // h1.addEventListener('click', () => {
+        //     alert("you have clicked on heading.");
+        // });third way.
+
+        //event bubbling and capturing.
+        let traceClick1 = (e) => {
+            console.log("button1");
+        }
+        let traceClick2 = (e) => {
+            e.stopPropagation();//prevent event capturing and event bubbling.
+            console.log("button2");
+        }
+        let traceClick3 = (e) => {
+            console.log("button3");
+        }
+        let button3 = document.getElementById("button3");
+        button1.addEventListener('click', traceClick1, false);
+        button2.addEventListener('click', traceClick2, false);
+        button3.addEventListener('click', traceClick3, false);//false denotes event bubbling(child->parent).
+        google.addEventListener('click', (e) => {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
