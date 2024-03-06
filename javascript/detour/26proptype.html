@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        let createUser = function (userId, userName) {
+            this.userId = userId;
+            this.userName = userName;
+            return this;
+        }
+        let user1 = new createUser("001", "Divyang");
+        let user2 = new createUser("002", "Dv");
+        Object.prototype.rFun = function () {
+            console.log("rfun invoked.");
+        }
+        user1.__proto__.fn2 = function () {
+
+        }
+        Object.rFun();
+        // console.log(user1.__proto__.__proto__.__proto__)return null.
+        console.log(user1.prototype);
+        console.log(user2);
+    </script>
+</body>
+
+</html>
