@@ -14,7 +14,7 @@ const handleGenrateNewUrlShortURL = async (req, res) => {
       redirectURL: body.url,
       visitHistory: [],
     });
-    res.json({ id: shortID });
+    res.render("home", { id: shortID });
   } catch (err) {
     console.log(err);
   }

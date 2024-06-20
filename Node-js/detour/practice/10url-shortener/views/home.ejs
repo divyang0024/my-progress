@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <h1>URL Shortener</h1>
+    <div>
+        <form method="POST" action="/URL">
+            <label for="myUrl">Enter URL:</label>
+            <input type="text" id="myUrl" name="url" placeholder="www.example.com">
+            <button type="submit">Go</button>
+        </form>
+        <h3>
+            <%if(locals.id){%>
+                Genrated Short Link :
+                <p style="text-decoration: underline;color: blue;">http://127.0.0.1:3000/URL/<%= id%>
+                </p>
+                <%}%>
+        </h3>
+    </div>
+</body>
+
+</html>
