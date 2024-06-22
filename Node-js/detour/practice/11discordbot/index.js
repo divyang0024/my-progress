@@ -1,4 +1,5 @@
 import { Client, GatewayIntentBits } from "discord.js";
+import { mySecret } from "./sercret.js";
 const client = new Client({
   intents: [
     GatewayIntentBits.Guilds,
@@ -15,6 +16,4 @@ client.on("messageCreate", (message) => {
   });
 });
 
-client.login(
-  "MTI1NDA4NjM4MTY4OTYzNDgzNw.GH5ZXP.u65xAwtNTZBOlajJt0dktRX94EZfcEXbENReQc"
-);
+client.login(mySecret);
